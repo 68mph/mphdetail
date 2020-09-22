@@ -1,0 +1,53 @@
+// All fonts
+
+
+p {
+    padding:0;
+    margin:0;
+    line-height: 1.8rem;
+    font-size: 18px;
+    font-weight: 100;
+    color: $color-p;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3 {
+    color: $color-title;
+}
+h1 {
+    font-size:38px;
+    line-height: 3.2rem;
+    padding:0 0 2rem;
+    font-weight: 100;
+    span {
+        color: $color-main-blue;
+    }
+}
+    h2 {
+        padding:0 0 2rem;
+        line-height: 1.4rem;
+        font-size: 18px;
+        font-weight: 100;
+}
+    h3 {
+        font-size:38px;
+        color:$color-title;
+        font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    color: $color-title;
+    li {
+        padding:0.6rem 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+small {
+    color:$color-main-blue;
+    font-size: 1rem;
+    font-weight:500;
+}
