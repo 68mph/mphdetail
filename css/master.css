@@ -125,6 +125,12 @@ html {
   height: auto;
 }
 
+.logo {
+  width: 160px;
+  height: auto;
+  margin-top: 1.2rem;
+}
+
 .li-icons {
   background-position: 0 8px;
   background-size: 30px auto;
@@ -133,6 +139,22 @@ html {
   width: 40px;
   margin-right: 6px;
   display: inline-block;
+}
+
+.inner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.services {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.services h3 {
+  padding: 18px;
+  line-height: 3rem;
 }
 
 section {
@@ -265,12 +287,6 @@ header {
   margin: 0 auto;
 }
 
-header .logo {
-  width: 160px;
-  height: auto;
-  margin-top: 1.2rem;
-}
-
 nav {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -365,16 +381,6 @@ section article.grid-4 .service h3 .fa-star {
 
 #intro article {
   margin: 50px auto;
-}
-
-#intro article .services {
-  text-align: center;
-  width: 70%;
-  margin: 0 auto;
-}
-
-#intro article .services h3 {
-  padding: 18px;
 }
 
 #about .icon-container {
@@ -484,25 +490,22 @@ footer .inner {
       flex-wrap: wrap;
 }
 
-footer .inner .address {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+footer .address {
+  width: 100%;
   padding: 14px 0 12px;
   border-top: 1px solid #3761b5;
   margin-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-footer .inner .address p {
+footer .address .inner {
+  padding: 0;
+}
+
+footer .address p {
   font-size: .8rem;
 }
 
-footer .inner .address a {
+footer .address a {
   color: #B4B4B4;
 }
 
@@ -534,7 +537,16 @@ footer .inner .address a {
     background-repeat: no-repeat;
     background-size: 240px auto;
     position: relative;
-    padding-bottom: 100px;
+  }
+  #content .services {
+    width: auto;
+  }
+  #content .services h3 {
+    font-size: 28px;
+    line-height: 2.4rem;
+  }
+  #content aside img {
+    width: auto;
   }
   #content header {
     display: block;
@@ -562,12 +574,22 @@ footer .inner .address a {
     max-width: 100%;
     display: block;
     padding: 0;
-    margin: 2rem 0;
+    margin: 0;
   }
   #content section article {
     width: 100%;
     margin: 3rem 0;
     padding: 0 1rem;
+    display: block;
+  }
+  #content section article .service {
+    text-align: center;
+    margin: 0 0 24px;
+    padding: 14px;
+  }
+  #content section article .service h3 {
+    font-size: 1.2rem;
+    padding: 8px 0;
   }
   #content aside {
     width: 100%;
@@ -577,17 +599,29 @@ footer .inner .address a {
   #content aside img {
     width: 100%;
   }
+  #content #hero .top .container {
+    display: block;
+  }
+  #content #hero .top .container article {
+    width: 100%;
+    margin: 0;
+  }
+  #content #hero .top .container aside {
+    width: 100%;
+    margin: 18px 0;
+  }
   #content #about article p.points {
     font-size: 1rem;
   }
   #content #about .icon-container {
     display: block;
-    padding: 2rem 1rem;
+    padding: 0 1rem;
     margin: 0;
   }
   #content #about .icon-container .icons {
     width: 100%;
     margin: 4rem 0;
+    text-align: center;
   }
   #content #about .services {
     display: block;
@@ -595,24 +629,16 @@ footer .inner .address a {
   #content #about .services h3 {
     display: block;
   }
-  #content #products {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  #content #billboard {
+    padding: 12px;
   }
-  #content #products aside {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  #content #billboard i {
+    vertical-align: middle;
+    padding: 8px;
   }
-  #content #products article {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+  #content #billboard .phone, #content #billboard .email {
+    width: 80%;
+    margin: 0 0 12px;
   }
   footer {
     background-image: url("../images/svg/bg-footer-lt.svg");
@@ -622,10 +648,11 @@ footer .inner .address a {
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 180px;
   }
   footer .inner {
     width: 100%;
+    display: block;
+    text-align: center;
   }
   footer .inner nav {
     -webkit-box-orient: vertical;
@@ -637,6 +664,11 @@ footer .inner .address a {
   footer .inner nav a {
     padding-bottom: 24px;
     color: #1293D4;
+    display: block;
+    margin: 0;
+  }
+  footer .inner nav .phone, footer .inner nav .email {
+    margin: 14px;
   }
   footer .inner .logo {
     width: 140px;

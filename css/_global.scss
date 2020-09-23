@@ -41,7 +41,11 @@ $url_3: url('../images/svg/bg-footer-lt.svg');
     width:500px;
     height:auto;
 }
-
+.logo {
+    width: 160px;
+    height:auto;
+    margin-top:1.2rem;
+}
 .li-icons {
     background-position: 0 8px;
     background-size: 30px auto;
@@ -51,7 +55,20 @@ $url_3: url('../images/svg/bg-footer-lt.svg');
     margin-right:6px;
     display: inline-block;
 }
+.inner {
+    max-width: 1140px;
+    margin:0 auto;
+}
+    .services {
+        text-align:center;
+        width:70%;
+        margin:0 auto;
 
+    h3 {
+        padding:18px;
+        line-height: 3rem;
+    }
+    }
 section {
     max-width:1140px;
     margin:0 auto;
@@ -85,6 +102,7 @@ section {
     i {
         padding-right:8px;
     }
+
 
 }
 .email {

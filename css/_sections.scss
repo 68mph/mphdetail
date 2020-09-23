@@ -10,11 +10,6 @@ header {
     display: flex;
     justify-content: space-between;
     margin:0 auto;
-    .logo {
-        width: 160px;
-        height:auto;
-        margin-top:1.2rem;
-    }
 }
 
 nav {
@@ -29,7 +24,7 @@ nav {
             font-weight: 500;
         }
     }
-    
+
 }
 
 section {
@@ -97,15 +92,6 @@ section {
 #intro {
     article {
         margin:50px auto;
-        .services {
-            text-align:center;
-            width:70%;
-            margin:0 auto;
-
-        h3 {
-            padding:18px;
-        }
-    }
     }
 }
 
@@ -205,19 +191,20 @@ footer {
         padding: 20px 0 0;
         justify-content:space-between;
         flex-wrap:wrap;
-        .address {
-            flex-basis:100%;
-            padding: 14px 0 12px;
-            border-top: 1px solid #3761b5;
-            margin-top: 32px;
-            display:flex ;
-            justify-content: space-between;
-            p {
-                font-size:.8rem;
-            }
-            a {
-                color:#B4B4B4;
-            }
+    }
+    .address {
+        width:100%;
+        padding: 14px 0 12px;
+        border-top: 1px solid #3761b5;
+        margin-top: 32px;
+        .inner {
+            padding:0;
+        }
+        p {
+            font-size:.8rem;
+        }
+        a {
+            color:#B4B4B4;
         }
     }
 }
