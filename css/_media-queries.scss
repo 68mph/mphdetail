@@ -32,7 +32,6 @@
 
 #content {
     width:100%;
-    background-image: $url_1;
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 240px auto;
@@ -153,7 +152,6 @@ header {
 
   }  
   footer {
-        background-image:$url_3;
         background-position: bottom left;
         background-repeat: no-repeat;
         background-size: 200px auto;
@@ -169,7 +167,7 @@ header {
                 margin-bottom: 40px;
                  a {
                      padding-bottom: 24px;
-                     color:$color-main-blue;
+                     color:white;
                      display:block;
                      margin:0;
                  }

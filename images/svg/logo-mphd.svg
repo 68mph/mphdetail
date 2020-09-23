@@ -1,7 +1,15 @@
-<svg id="Logo" xmlns="http://www.w3.org/2000/svg" width="197" height="149.851" viewBox="0 0 197 149.851">
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" width="178" height="149.851" viewBox="0 0 178 149.851">
+<defs>
+  <style type="text/css">
+    @font-face {
+      font-family: Good GoodTimesRg;
+      src: url('../fonts/good_times_rg.ttf');
+    }
+  </style>
+</defs>
   <g id="Group_211" data-name="Group 211" transform="translate(0 23.185)">
-    <text id="MPH_" data-name="MPH " transform="translate(0 96.928)" fill="#fff" font-size="63" font-family="GoodTimesRg-Regular, Good Times"><tspan x="0" y="0">MPH </tspan></text>
-    <text id="DETAILING_SERVICES" data-name="DETAILING SERVICES" transform="translate(1.54 120.665)" fill="#88c6e8" font-size="17" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.003em"><tspan x="0" y="0">DETAILING SERVICES</tspan></text>
+    <text id="MPH" transform="translate(0 96.928)" fill="#fff" font-size="63" font-family="GoodTimesRg-Regular, Good Times"><tspan x="0" y="0">MPH</tspan></text>
+    <text id="DETAILING_SERVICES" data-name="DETAILING SERVICES" transform="translate(1.54 120.665)" fill="#88c6e8" font-size="18" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="-0.011em"><tspan x="0" y="0">DETAILING SERVICES</tspan></text>
     <g id="Group_210" data-name="Group 210" transform="translate(4.724)">
       <path id="Path_423" data-name="Path 423" d="M74.42,39.465c2.8.722,2.655,1.854,2.655,1.854l2.1,10.157s.14-8.163.26-9.538,1.289-6.212,1.289-6.212L45.9,33.13S71.622,38.743,74.42,39.465Z" transform="translate(-19.185 -4.314)" fill="#fff"/>
       <path id="Path_424" data-name="Path 424" d="M76.893,34.425c-2.464-2.61-7.456-3.83-12.13.071s-4.3,17.213-4.3,17.213A22.666,22.666,0,0,1,64.635,40.2s4.17-5.71,9.478-3.839,8.97,8.825,8.97,8.825C82.578,42.106,79.355,37.034,76.893,34.425Z" transform="translate(7.771 -6.408)" fill="#fff"/>

@@ -11,7 +11,7 @@ $color-main-blue: #1293D4;
 $color-title:#34327B;
 $color-text-lt: #EFF3FC;
 $color-white: #ffffff;
-$color-p:#B4B4B4;
+$color-p:#a1a1a1;
 $color-aqua: #88C6E8;
 $color-small: #1293D4;
 $color-hero: #1F448F;
@@ -23,11 +23,6 @@ $vh: calc(100vh - 54px);
 
 //fonts
 $font_1: 'Poppins', sans-serif;
-
-//urls
-$url_1: url('../images/svg/bg-top-rt.svg');
-$url_2: url('../images/svg/bg-top-lt.svg');
-$url_3: url('../images/svg/bg-footer-lt.svg');
 
 //@extend-elements
 .flex {
