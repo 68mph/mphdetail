@@ -197,6 +197,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #88C6E8;
 }
 
 h1, h2, h3 {
@@ -290,7 +291,6 @@ nav a.active {
 
 section article {
   margin: 4rem 0;
-  width: 50%;
 }
 
 section article.grid-4 {
@@ -364,12 +364,13 @@ section article.grid-4 .service h3 .fa-star {
 }
 
 #intro article {
-  width: 80%;
-  margin: 80px auto;
+  margin: 50px auto;
 }
 
 #intro article .services {
   text-align: center;
+  width: 70%;
+  margin: 0 auto;
 }
 
 #intro article .services h3 {
@@ -431,6 +432,10 @@ section article.grid-4 .service h3 .fa-star {
   padding: 12px;
 }
 
+#billboard .inner p {
+  font-weight: 400;
+}
+
 #services {
   margin-top: 140px;
 }
@@ -471,10 +476,34 @@ footer .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 0;
+  padding: 20px 0 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .inner .address {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 14px 0 12px;
+  border-top: 1px solid #3761b5;
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .inner .address p {
+  font-size: .8rem;
+}
+
+footer .inner .address a {
+  color: #B4B4B4;
 }
 
 @media screen and (max-width: 800px) {
