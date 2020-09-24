@@ -343,7 +343,7 @@ section article.grid-4 .service h3 .fa-star {
 }
 
 #hero {
-  background: linear-gradient(162deg, #1d80b4d4 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.png);
+  background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.png);
   max-width: 100%;
 }
 
@@ -364,6 +364,10 @@ section article.grid-4 .service h3 .fa-star {
 #hero .top .container article {
   width: 500px;
   margin-top: 87px;
+}
+
+#hero .top .container article p {
+  color: #C8D6F2;
 }
 
 #hero .top .container article .btns {
@@ -415,15 +419,20 @@ section article.grid-4 .service h3 .fa-star {
 }
 
 #billboard {
-  background: #1F448F;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 81, 155, 0.85)), to(rgba(31, 68, 133, 0.85))), url(../images/bg-promo.jpg);
+  background: linear-gradient(rgba(38, 81, 155, 0.85), rgba(31, 68, 133, 0.85)), url(../images/bg-promo.jpg);
   max-width: 100%;
-  padding: 30px 0;
+  padding: 30px 0 0;
 }
 
 #billboard .inner {
   max-width: 1140px;
   margin: 0 auto;
   text-align: center;
+}
+
+#billboard .inner small {
+  color: #88C6E8;
 }
 
 #billboard .inner h3 {
@@ -440,6 +449,7 @@ section article.grid-4 .service h3 .fa-star {
 
 #billboard .inner p {
   font-weight: 400;
+  background: rgba(3, 29, 90, 0.5);
 }
 
 #services {
