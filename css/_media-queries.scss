@@ -26,9 +26,9 @@
     }
 
     //Hide for mobile
-    .btns, header nav {
-        display: none;
-    }
+    // .btns, header nav {
+    //     display: none;
+    // }
 
 //Global elements
         .logo {
@@ -42,6 +42,60 @@
     background-repeat: no-repeat;
     background-size: 240px auto;
     position: relative;
+
+    .navbar {
+        padding-bottom: 10px;
+        .button {
+          background:none;
+          padding:0;
+          min-width:auto;
+          text-align: left;
+          color: $color-aqua;
+        }
+      }
+      
+      .main-nav {
+        list-style-type: none;
+        display: none;
+        background: rgba(31, 68, 133, 0.95);
+        padding:14px;
+        position: absolute;
+        top:104px;
+        left:0;
+        width:100%;
+      }
+    
+      
+      .nav-links {
+        text-decoration: none;
+      }
+      
+      .main-nav li {
+        text-align: center;
+      }
+      
+      .logo {
+        display: inline-block;
+        font-size: 22px;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      
+      .navbar-toggle {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 24px;
+        z-index: 2;
+        display:block;
+      }
+      
+      .active {
+        display: block;
+      }
+
     .services {
         width:auto;
         h3 {
@@ -57,7 +111,7 @@
 header {
     display:block;
     max-width:100%;
-    padding:0 1rem 2rem;
+    padding:0;
 
         .links {
         display:none;
@@ -183,6 +237,7 @@ header {
             }
 
         }
+    }
 }
-}
+
 

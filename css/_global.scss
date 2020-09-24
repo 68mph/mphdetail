@@ -38,9 +38,8 @@ $font_1: 'Poppins', sans-serif;
     height:auto;
 }
 .logo {
-    width: 160px;
+    width: 120px;
     height:auto;
-    margin-top:1.2rem;
 }
 .li-icons {
     background-position: 0 8px;
@@ -68,6 +67,7 @@ $font_1: 'Poppins', sans-serif;
 section {
     max-width:1140px;
     margin:0 auto;
+    padding: 0 14px;
 }
 
 .button {
@@ -77,7 +77,6 @@ section {
     min-width: 188px;
     border-radius: 8px;
     color: $color-text-lt;
-    text-transform: uppercase;
     border:none;
     margin-right: 1rem;
     display:inline-block;

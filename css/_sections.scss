@@ -7,18 +7,22 @@ body {
 
 header {
     max-width:1140px;
-    display: flex;
-    justify-content: space-between;
-    margin:0 auto;
+    // display: flex;
+    // justify-content: space-between;
+    margin:0 auto 24px;
+    padding:1.4rem 0 0;
 }
 
 nav {
     align-items: flex-end;
-    margin: 3.4rem 0 0;
+    margin: 0;
+    align-self: center;
     a {
         color: $color-aqua;
-        margin: 0 3.4rem 0 0;
+        margin:0;
         font-weight:400;
+        text-transform: uppercase;
+        padding:0 3.2rem 0 0;
         &.active {
             color:$color-white;
             font-weight: 500;
