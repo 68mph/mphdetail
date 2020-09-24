@@ -524,11 +524,14 @@ footer .address a {
     width: 100%;
     margin: 0 0 1rem;
   }
-  .btns {
-    display: none;
-  }
   ul li {
     line-height: 1.4rem;
+  }
+  .btns, header nav {
+    display: none;
+  }
+  .logo {
+    width: 100px;
   }
   #content {
     width: 100%;
@@ -550,10 +553,7 @@ footer .address a {
   #content header {
     display: block;
     max-width: 100%;
-    padding: 0 1rem;
-  }
-  #content header .logo {
-    width: 120px;
+    padding: 0 1rem 2rem;
   }
   #content header .links {
     display: none;
@@ -598,6 +598,9 @@ footer .address a {
   #content aside img {
     width: 100%;
   }
+  #content #hero {
+    text-align: center;
+  }
   #content #hero .top .container {
     display: block;
   }
@@ -633,7 +636,7 @@ footer .address a {
   }
   #content #billboard i {
     vertical-align: middle;
-    padding: 8px;
+    padding: 4px;
   }
   #content #billboard .phone, #content #billboard .email {
     width: 80%;
@@ -667,9 +670,5 @@ footer .address a {
   }
   footer .inner nav .phone, footer .inner nav .email {
     margin: 14px;
-  }
-  footer .inner .logo {
-    width: 140px;
-    height: auto;
   }
 }

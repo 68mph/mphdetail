@@ -18,17 +18,23 @@
         width:100%;
         margin: 0 0 1rem;
     }
-    .btns {
-        display: none;
-    }
+
     ul {
         li {
             line-height: 1.4rem;
         }
     }
 
-//Global elements
+    //Hide for mobile
+    .btns, header nav {
+        display: none;
+    }
 
+//Global elements
+        .logo {
+            width:100px;
+        
+        }
 
 #content {
     width:100%;
@@ -51,11 +57,8 @@
 header {
     display:block;
     max-width:100%;
-    padding:0 1rem;
-        .logo {
-            width:120px;
-        
-        }
+    padding:0 1rem 2rem;
+
         .links {
         display:none;
         }
@@ -101,7 +104,9 @@ header {
             width:100%;
         }
     }    
-    #hero .top .container {
+    #hero {
+    text-align: center;
+ .top .container {
         display: block;
         article {
             width:100%;
@@ -112,6 +117,7 @@ header {
             margin:18px 0;
         }
     }
+}
   
     #about {
         article {
@@ -142,7 +148,7 @@ header {
         padding:12px;
         i {
             vertical-align: middle;
-            padding: 8px;
+            padding: 4px;
         }
         .phone, .email {
             width:80%;
@@ -174,10 +180,6 @@ header {
                  .phone, .email {
                      margin:14px;
                  }
-            }
-            .logo {
-                width:140px;
-                height:auto;
             }
 
         }
