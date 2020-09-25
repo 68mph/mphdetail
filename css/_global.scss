@@ -37,6 +37,23 @@ $font_1: 'Poppins', sans-serif;
     width:500px;
     height:auto;
 }
+
+.grid-4 {
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap:4rem;
+}
+
+.grid-6 {
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: .4rem;
+}
+
 .logo {
     width: 120px;
     height:auto;

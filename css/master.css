@@ -167,6 +167,28 @@ html {
   height: auto;
 }
 
+.grid-4 {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 4rem;
+}
+
+.grid-6, #gallery article {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-gap: .4rem;
+}
+
 .logo {
   width: 120px;
   height: auto;
@@ -506,6 +528,30 @@ section article.grid-4 .service h3 .fa-star {
   width: 500px;
 }
 
+#gallery img {
+  width: 100%;
+}
+
+#gallery .text {
+  border-radius: 24px 0 0 0;
+  margin: 0 0 .4rem;
+  background: #1F448F;
+  padding: 24px;
+}
+
+#gallery .text h3 {
+  color: white;
+  padding: 0 0 24px;
+}
+
+#gallery .text p {
+  color: #C8D6F2;
+}
+
+#gallery .grid-item {
+  float: left;
+}
+
 #products {
   margin-top: 100px;
 }
@@ -615,10 +661,8 @@ footer .address a {
     text-align: center;
   }
   #content .logo {
-    display: inline-block;
     font-size: 22px;
     margin-top: 10px;
-    margin-left: 20px;
   }
   #content .navbar-toggle {
     position: absolute;
@@ -735,6 +779,9 @@ footer .address a {
     width: 80%;
     margin: 0 0 12px;
   }
+  #gallery .text {
+    border-radius: 14px 14px 0 0;
+  }
   footer {
     background-position: bottom left;
     background-repeat: no-repeat;
@@ -753,15 +800,16 @@ footer .address a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 40px;
+    margin: 40px 0;
   }
   footer .inner nav a {
-    padding-bottom: 24px;
+    padding: 0 0 24px;
     color: white;
     display: block;
     margin: 0;
   }
   footer .inner nav .phone, footer .inner nav .email {
     margin: 14px;
+    padding: 14px;
   }
 }
