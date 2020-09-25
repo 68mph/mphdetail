@@ -690,7 +690,7 @@ footer .address a {
   #content header {
     display: block;
     max-width: 100%;
-    padding: 0;
+    padding: 0 1rem;
   }
   #content header .links {
     display: none;
