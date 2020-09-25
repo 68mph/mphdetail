@@ -210,10 +210,14 @@ header {
 
   }
   #gallery {
+      article {
+          column-count: 1;
+        .text {
+            border-radius:14px 14px 0 0;
+        }  
+      }
 
-    .text {
-        border-radius:14px 14px 0 0;
-    }  
+
 }
   footer {
         background-position: bottom left;

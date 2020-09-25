@@ -178,7 +178,7 @@ html {
   grid-gap: 4rem;
 }
 
-.grid-6, #gallery article {
+.grid-6 {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -548,6 +548,11 @@ section article.grid-4 .service h3 .fa-star {
   color: #C8D6F2;
 }
 
+#gallery article {
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
 #gallery .grid-item {
   float: left;
 }
@@ -779,7 +784,11 @@ footer .address a {
     width: 80%;
     margin: 0 0 12px;
   }
-  #gallery .text {
+  #gallery article {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+  #gallery article .text {
     border-radius: 14px 14px 0 0;
   }
   footer {

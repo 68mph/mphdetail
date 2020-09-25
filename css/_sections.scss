@@ -196,7 +196,7 @@ section {
         padding: 24px;
     }
       article {
-        @extend.grid-6;
+        column-count: 2;
       }
       .grid-item {
           float:left;
