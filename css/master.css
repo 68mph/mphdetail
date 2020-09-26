@@ -175,7 +175,7 @@ html {
       grid-template-columns: repeat(2, 50%);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-gap: 4rem;
+  grid-gap: 2rem;
 }
 
 .grid-6 {
@@ -380,7 +380,7 @@ section article.grid-4 {
       grid-template-columns: repeat(2, 50%);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-gap: 4rem;
+  grid-gap: 0;
 }
 
 section article.grid-4 .service h3 {
@@ -448,6 +448,10 @@ section article.grid-4 .service h3 .fa-star {
 
 #intro article {
   margin: 50px auto;
+}
+
+#intro article .service {
+  padding: 14px;
 }
 
 #about .icon-container {
@@ -579,7 +583,7 @@ footer {
 }
 
 footer .inner {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;

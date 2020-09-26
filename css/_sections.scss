@@ -39,7 +39,7 @@ section {
             display:grid;
             grid-template-columns: repeat(2, 50%);
             grid-template-rows: repeat(2, 1fr);
-            grid-gap:4rem;
+            grid-gap:0;
         
         .service {
             h3 {
@@ -99,6 +99,9 @@ section {
 #intro {
     article {
         margin:50px auto;
+        .service {
+            padding:14px;
+        }
     }
 }
 
@@ -226,7 +229,7 @@ footer {
     width:100%;
     margin-top:100px;
     .inner {
-        width:1140px;
+        max-width:1140px;
         margin: 0 auto;
         display:flex;
         padding: 20px 0 0;
