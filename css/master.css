@@ -100,48 +100,6 @@ input, select {
   vertical-align: middle;
 }
 
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 0;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.main-nav li {
-  margin: 0;
-}
-
-.nav-links {
-  margin-left: 0;
-}
-
-.navbar-toggle {
-  display: none;
-}
-
-.logo:hover,
-.nav-links:hover {
-  color: white;
-}
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -162,7 +120,7 @@ html {
           justify-content: space-between;
 }
 
-.ill, #hero .top .container aside, #services aside, #products aside {
+.ill, .container aside, #services aside, #products aside {
   width: 500px;
   height: auto;
 }
@@ -213,11 +171,6 @@ html {
   text-align: center;
   width: 70%;
   margin: 0 auto;
-}
-
-.services h3 {
-  padding: 18px;
-  line-height: 3rem;
 }
 
 section {
@@ -271,6 +224,64 @@ section {
   display: inline-block;
 }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+nav a {
+  color: #88C6E8;
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0 3.2rem 0 0;
+}
+
+nav a.active {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.nav-links {
+  margin-left: 0;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.logo:hover,
+.nav-links:hover {
+  color: white;
+}
+
 p {
   padding: 0;
   margin: 0;
@@ -311,6 +322,8 @@ h3 {
   font-size: 38px;
   color: #2a2a33;
   font-weight: 400;
+  padding: 0 0 1.2rem;
+  line-height: 3rem;
 }
 
 ul {
@@ -329,9 +342,11 @@ ul li {
 }
 
 small {
+  display: block;
   color: #1293D4;
   font-size: 1rem;
   font-weight: 700;
+  padding: 0 0 .4rem;
 }
 
 /* Main sectim css */
@@ -342,30 +357,7 @@ body {
 header {
   max-width: 1140px;
   margin: 0 auto 24px;
-  padding: 1.4rem 0 0;
-}
-
-nav {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin: 0;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-nav a {
-  color: #88C6E8;
-  margin: 0;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 0 3.2rem 0 0;
-}
-
-nav a.active {
-  color: #ffffff;
-  font-weight: 500;
+  padding: 1.4rem 0;
 }
 
 section article {
@@ -415,7 +407,11 @@ section article.grid-4 .service h3 .fa-star {
   margin: 0 auto;
 }
 
-#hero .top .container {
+#hero .top p {
+  color: #C8D6F2;
+}
+
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,26 +420,27 @@ section article.grid-4 .service h3 .fa-star {
           justify-content: space-between;
 }
 
-#hero .top .container article {
+.container article {
   width: 500px;
   margin-top: 87px;
 }
 
-#hero .top .container article p {
-  color: #C8D6F2;
-}
-
-#hero .top .container article .btns {
+.container article .btns {
   padding: 2.4rem 0 0;
 }
 
-#hero .top .container aside {
+.container aside {
   margin: 100px 0 0;
 }
 
-#hero .top .container aside img {
+.container aside img {
   width: 100%;
   height: auto;
+}
+
+#head {
+  background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.png);
+  max-width: 100%;
 }
 
 #intro article {
@@ -490,6 +487,7 @@ section article.grid-4 .service h3 .fa-star {
   background: linear-gradient(rgba(38, 81, 155, 0.85), rgba(31, 68, 133, 0.85)), url(../images/bg-promo.jpg);
   max-width: 100%;
   padding: 30px 0 0;
+  margin: 40px 0;
 }
 
 #billboard .inner {

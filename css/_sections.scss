@@ -10,25 +10,7 @@ header {
     // display: flex;
     // justify-content: space-between;
     margin:0 auto 24px;
-    padding:1.4rem 0 0;
-}
-
-nav {
-    align-items: flex-end;
-    margin: 0;
-    align-self: center;
-    a {
-        color: $color-aqua;
-        margin:0;
-        font-weight:400;
-        text-transform: uppercase;
-        padding:0 3.2rem 0 0;
-        &.active {
-            color:$color-white;
-            font-weight: 500;
-        }
-    }
-
+    padding:1.4rem 0;
 }
 
 section {
@@ -71,29 +53,37 @@ section {
     max-width:100%;
     .top { max-width:1140px;
         margin:0 auto;
-        .container {
-            display: flex;
-            justify-content: space-between;
-    article {
-        width:500px;
-        margin-top:87px;
         p {
             color: $color-p-hero;
         }
-        .btns {
-            padding:2.4rem 0 0;
-        }
-        }
-        aside {
-          @extend .ill;
-            margin:100px 0 0;
-            img {
-                width:100%;
-                height:auto;
-            }
-        }
+}
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    article {
+    width:500px;
+    margin-top:87px;
+
+    .btns {
+        padding:2.4rem 0 0;
+    }
+    }
+    aside {
+    @extend .ill;
+        margin:100px 0 0;
+        img {
+            width:100%;
+            height:auto;
         }
     }
+}
+
+
+#head {
+    background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.png);
+    max-width:100%;
 }
 
 #intro {
@@ -140,6 +130,7 @@ section {
     url(../images/bg-promo.jpg);
     max-width:100%;
     padding:30px 0 0;
+    margin:40px 0;
     .inner {
         max-width: 1140px;
         margin:0 auto;
