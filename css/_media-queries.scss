@@ -10,9 +10,11 @@
     }
     h3 {
         font-size:1.2rem;
+        line-height: 2rem;
     }
     p {
         font-size:1rem;
+        line-height: 1.4rem;
     }
     .button {
         width:100%;
@@ -42,8 +44,24 @@
     background-repeat: no-repeat;
     background-size: 240px auto;
     position: relative;
+    #head {
+        margin:0;
+    }
 
-    .navbar {
+    .title {
+        display: block;
+        width:100%;
+        h3 {
+            display: block;
+
+        }
+    }
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    nav {
+        display:block;
         padding-bottom: 10px;
         .button {
           background:none;
@@ -81,7 +99,7 @@
       
       .navbar-toggle {
         position: absolute;
-        top: 10px;
+        top: 20px;
         right: 20px;
         cursor: pointer;
         color: rgba(255, 255, 255, 0.8);
@@ -94,8 +112,10 @@
         display: block;
       }
 
-    .services {
+    .card {
         width:auto;
+        padding: 24px 0;
+        text-align: center;
         h3 {
             font-size: 28px;
             line-height: 2.4rem;
@@ -104,12 +124,14 @@
     aside {
         img {
             width:auto;
+            border-radius: 12px;
         }
     }
 header {
     display:block;
     max-width:100%;
     padding:0 1rem;
+    text-align: center;
 
         .links {
         display:none;
@@ -127,15 +149,14 @@ header {
     }
     section {
         width:100%;
-        max-width: 100%;
-        display: block;
         padding:0;
-        margin:0;
+        margin: 40px 0 0;
         article {
             width:100%;
-            margin: 3rem 0;
+            margin:40px 0;
             padding:0 1rem;
             display:block;
+            text-align: center;
             .service {
                text-align: center;
                 margin: 0 0 24px;
@@ -157,8 +178,8 @@ header {
         }
     }    
     #hero {
-    text-align: center;
- .top .container {
+    margin:0;
+        .top .container {
         display: block;
         article {
             width:100%;
@@ -177,7 +198,8 @@ header {
                 font-size: 1rem;
                 }
             }
-        .icon-container {
+        }
+        .card-container {
             display:block;
             padding: 0 1rem;
             margin:0;
@@ -187,17 +209,11 @@ header {
                 text-align: center;
             }
         }
-        .services {
-            display: block;
-            h3 {
-                display: block;
+   
 
-            }
-        }
-    }
-
-    #billboard {
+    #jumbotron {
         padding:12px;
+        margin:0;
         i {
             vertical-align: middle;
             padding: 4px;
@@ -219,6 +235,32 @@ header {
 
 
 }
+
+//EMail signup
+#jumbotron.email {
+   #mc_embed_signup {
+    width:auto;
+   .mc-field-group { 
+   .email {
+    width:100%;
+    border-radius:14px;
+    margin:0 0 18px;
+   }
+   input[type=submit] {
+    border-radius:14px;
+    width:100%;
+    padding:.8rem;
+    margin-bottom: 10px;
+      }
+     }
+
+
+    }
+}
+
+
+
+
   footer {
         background-position: bottom left;
         background-repeat: no-repeat;
@@ -226,6 +268,7 @@ header {
         position: relative;
         bottom:0;
         width:100%;
+        margin:0;
         .inner {
             width:100%;
             display:block;

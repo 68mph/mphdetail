@@ -8,6 +8,7 @@ html {
 
 //font colors
 $color-main-blue: #1293D4;
+$color-on: #2280af;
 $color-title:#2a2a33;
 $color-text-lt: #EFF3FC;
 $color-white: #ffffff;
@@ -16,6 +17,7 @@ $color-aqua: #88C6E8;
 $color-small: #1293D4;
 $color-hero: #1F448F;
 $color-p-hero: #C8D6F2;
+$color-error: #de9d65;
 
 //sizing
 $size_100: 100%;
@@ -71,7 +73,7 @@ $font_1: 'Poppins', sans-serif;
     max-width: 1140px;
     margin:0 auto;
 }
-    .services {
+    .title {
         text-align:center;
         width:70%;
         margin:0 auto;
@@ -100,12 +102,13 @@ section {
     }
 }
 
-.phone {
+.phone, .mail {
     color:$color-aqua;
     display: inline-block;
     margin:0 12px;
     padding: 20px;
     border:1px solid #3761b5;
+    background: rgba(3, 29, 90, 0.50);
     i {
         padding-right:8px;
     }
@@ -113,16 +116,57 @@ section {
 
 }
 .email {
-    display: inline-block;
-    margin:0 12px;
-    padding: 20px;
-    border:1px solid #3761b5;
-    i {
-        padding-right:8px;
-    }
-
     a {
     color:$color-aqua;
     display: inline-block;
+    }
+}
+
+.lt-round {
+    border-radius: 24px 0 0 0;
+
+}
+.rt-round {
+    border-radius: 0 24px 0 0;
+}
+
+//Jumbotron
+.jumbo-home-bg {
+    background: 
+    linear-gradient(
+        rgba(38, 81, 155, 0.85), 
+        rgba(31, 68, 133, 0.85)
+      ),
+    url(../images/bg-promo.jpg);
+}
+.jumbo-about-img {
+    background: 
+    linear-gradient(
+        rgba(38, 81, 155, 0.85), 
+        rgba(31, 68, 133, 0.85)
+      ),
+    url(../images/bg-promo-about.jpg);
+}
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin: 80px 0 0;
+
+}
+.card {
+    width:268px;
+    padding:0 24px 0 0;
+    img {
+        width: 100px;
+        height:auto;
+        margin-bottom:12px;
+    }
+    h3 {
+        font-size: 1.4rem;
+        padding: 18px 0;
+    }
+    p {
+        font-size:16px;
     }
 }

@@ -7,15 +7,15 @@ body {
 
 header {
     max-width:1140px;
-    // display: flex;
-    // justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     margin:0 auto 24px;
     padding:1.4rem 0;
 }
 
 section {
     article {
-        margin:4rem 0;
+        margin:3rem 0;
         &.grid-4 {
             width:100%;
             display:grid;
@@ -56,23 +56,24 @@ section {
         p {
             color: $color-p-hero;
         }
-}
+    }
 }
 
 .container {
     display: flex;
     justify-content: space-between;
+    &.rev {
+        flex-direction: row-reverse;
+    }
     article {
     width:500px;
-    margin-top:87px;
-
     .btns {
         padding:2.4rem 0 0;
     }
     }
     aside {
     @extend .ill;
-        margin:100px 0 0;
+        margin:0;
         img {
             width:100%;
             height:auto;
@@ -88,7 +89,6 @@ section {
 
 #intro {
     article {
-        margin:50px auto;
         .service {
             padding:14px;
         }
@@ -97,50 +97,22 @@ section {
 
 #about {
 
-    .icon-container {
-        display: flex;
-        justify-content: space-between;
-        width:100%;
-        margin: 80px 0 0;
-        .icons {
-            width:268px;
-            padding:0 18px 0 0;
-            img {
-                width: 100px;
-                height:auto;
-                margin-bottom:12px;
-            }
-            h3 {
-                font-size: 1.4rem;
-                padding: 18px 0;
-            }
-            p {
-                font-size:16px;
-            }
-        }
-    }
+
 }
 
-#billboard {
-    background: 
-    linear-gradient(
-        rgba(38, 81, 155, 0.85), 
-        rgba(31, 68, 133, 0.85)
-      ),
-    url(../images/bg-promo.jpg);
+//JUmbotron
+#jumbotron {
+  @extend .jumbo-home-bg;
     max-width:100%;
-    padding:30px 0 0;
+    padding:30px 0;
     margin:40px 0;
+    
     .inner {
         max-width: 1140px;
         margin:0 auto;
         text-align:center;
-        small {
-            color:$color-aqua;
-        }
         h3 {
             color:white;
-            padding:16px;
             i {
                 color:$color-aqua;
                 vertical-align: top;
@@ -148,10 +120,22 @@ section {
                 padding:12px;
             }
         }
-        p {
-                font-weight:400;
-                background: rgba(3, 29, 90, 0.50);
-        }
+
+    }
+}
+
+
+    #faq {
+    .card:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f10d";
+        font-size: 2.8rem;
+        color: #cdeffd;
+    }
+    strong {
+        display: block;
+        padding:20px 0
     }
 }
 
@@ -177,7 +161,6 @@ section {
         width:100%;
     }
     .text {
-        border-radius: 24px 0 0 0;
         margin:0 0 .4rem;
         h3 {
             color:white;
@@ -213,6 +196,67 @@ section {
     }
 }
 
+//Email signup
+#jumbotron.email{
+    position:relative;
+    h3 {
+        padding:0;
+    }
+    p {
+        padding:0 0 18px;
+        color:$color-p-hero;
+        font-size:14px;
+        i {
+            color: $color-main-blue;
+        }
+    }
+#mc_embed_signup {
+    width:570px;
+    margin:0 auto 14px;
+    .mc-field-group {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .email{
+            background: white;
+            border: none;
+            padding:.8rem;
+            border-radius: 10px 0 0 10px;
+        }
+        input[type=submit] {
+            border-radius: 0 10px 10px 0;
+            min-width:auto;
+            width:auto;
+            padding: 0 2rem;
+            cursor:pointer;
+        }
+        input[type=submit]:hover {
+            background: $color-on;
+        }
+    }
+
+}
+
+#mc_embed_signup div.mce_inline_error {
+    flex-basis: 100%;
+    background: none;
+    font-weight: 100;
+    font-size:14px;
+    margin: 0;
+    padding: 14px;
+    position:absolute;
+    bottom: 0;
+    color: $color-error;
+
+}
+
+#mc_embed_signup .mc-field-group input {
+    width:320px;
+    margin:0;
+}
+}
+
+
 footer {
     background-color: $color-hero;
     position: relative;
@@ -226,6 +270,9 @@ footer {
         padding: 20px 0 0;
         justify-content:space-between;
         flex-wrap:wrap;
+        .logo {
+            padding:20px 0
+        }
     }
     .address {
         width:100%;
