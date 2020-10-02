@@ -235,8 +235,12 @@ header {
             border-radius:14px 14px 0 0;
         }  
       }
+}
 
-
+.services {
+    padding:0 2rem;
+    column-count: 1;
+    text-align: center;
 }
 
 //EMail signup

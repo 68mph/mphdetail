@@ -329,6 +329,16 @@ section {
  }
 }
 
+.services {
+    column-count: 3;
+       li:before {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f35a';
+        margin: 0 8px 0 -15px;
+        color: #0e9fda;
+       }
+}
+
 
 footer {
     background-color: $color-hero;

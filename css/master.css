@@ -358,6 +358,19 @@ p {
   color: #a1a1a1;
 }
 
+ul {
+  margin: 3rem 0;
+}
+
+ul li {
+  padding: 0;
+  margin: 0;
+  line-height: 1.8rem;
+  font-size: 16px;
+  font-weight: 100;
+  color: #a1a1a1;
+}
+
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -772,6 +785,18 @@ section article.grid-4 .service h4 .fa-star {
   padding: 0 0 2rem;
 }
 
+.services {
+  -webkit-column-count: 3;
+          column-count: 3;
+}
+
+.services li:before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f35a';
+  margin: 0 8px 0 -15px;
+  color: #0e9fda;
+}
+
 footer {
   background-color: #1F448F;
   position: relative;
@@ -1016,6 +1041,12 @@ footer .address a {
   }
   #gallery article .text {
     border-radius: 14px 14px 0 0;
+  }
+  .services {
+    padding: 0 2rem;
+    -webkit-column-count: 1;
+            column-count: 1;
+    text-align: center;
   }
   #jumbotron.email #mc_embed_signup {
     width: auto;
