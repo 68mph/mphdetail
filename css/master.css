@@ -209,6 +209,11 @@ input[type=submit] {
   cursor: pointer;
 }
 
+input[type=checkbox] {
+  height: 10px;
+  width: auto;
+}
+
 .phone, .mail {
   color: #88C6E8;
   display: inline-block;
@@ -723,6 +728,7 @@ section article.grid-4 .service h4 .fa-star {
 
 #contact input[type=checkbox] {
   width: auto;
+  height: 20px;
 }
 
 #contact .container {

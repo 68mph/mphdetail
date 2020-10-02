@@ -112,6 +112,12 @@ input[type=submit] {
     font-size:16px;
     cursor:pointer;
     }
+
+    input[type=checkbox] {
+        height: 10px;
+        width: auto;
+    }
+
 .phone, .mail {
     color:$color-aqua;
     display: inline-block;
