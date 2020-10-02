@@ -62,18 +62,6 @@
         flex-direction: column-reverse;
         margin:2rem 0 0
     }
-
-    nav {
-        display:block;
-        padding-bottom: 10px;
-        .button {
-          background:none;
-          padding:0;
-          min-width:auto;
-          text-align: left;
-          color: $color-aqua;
-        }
-      }
       
       .main-nav {
         list-style-type: none;
@@ -287,8 +275,22 @@ header {
    }
 
 }
-
+    nav {
+        display:block;
+        padding-bottom: 10px;
+        .button {
+        background:none;
+        padding:0;
+        min-width:auto;
+        text-align: left;
+        color: $color-aqua;
+        }
+    }
   footer {
+      .button {
+          text-align:center;
+          padding:inherit
+      }
         background-position: bottom left;
         background-repeat: no-repeat;
         background-size: 200px auto;
@@ -297,6 +299,9 @@ header {
         width:100%;
         margin:0;
         .inner {
+            .rt {
+                display: block;
+            }
             width:100%;
             display:block;
             text-align: center;
@@ -305,7 +310,6 @@ header {
                 margin: 20px 0;
                  a {
                      padding: 12px 0;
-                     color:white;
                      display:block;
                      margin:0;
                  }

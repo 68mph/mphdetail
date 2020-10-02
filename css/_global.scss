@@ -43,6 +43,10 @@ $font_1: 'Poppins', sans-serif;
     height:auto;
 }
 
+nav a {
+    text-transform: uppercase;
+}
+
 .grid-4 {
     width:100%;
     display:grid;
