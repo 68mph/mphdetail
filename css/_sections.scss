@@ -24,10 +24,10 @@ section {
             grid-gap:0;
         
         .service {
-            h3 {
-                font-size: 1.4rem;;
-                padding:1rem 0 2rem;
-                font-weight:400;
+            h4 {
+                // font-size: 1.4rem;;
+                // padding:1rem 0 2rem;
+                // font-weight:400;
                 img {
                     height:30px;
                     vertical-align: middle;
@@ -49,6 +49,9 @@ section {
 }
 
 #hero {
+    h1 {
+        color:white;
+    }
     background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.png);
     max-width:100%;
     .top { max-width:1140px;
@@ -60,10 +63,19 @@ section {
 }
 
 .container {
+    margin:3rem 0 0;
     display: flex;
     justify-content: space-between;
     &.rev {
         flex-direction: row-reverse;
+        .title {
+            padding-left:40px;
+        }
+    }
+    .title {
+        text-align: left;
+        width:50%;
+        padding-right:40px;
     }
     article {
     width:500px;
@@ -95,18 +107,11 @@ section {
     }
 }
 
-#about {
-
-
-}
-
 //JUmbotron
 #jumbotron {
   @extend .jumbo-home-bg;
     max-width:100%;
     padding:30px 0;
-    margin:40px 0;
-    
     .inner {
         max-width: 1140px;
         margin:0 auto;
@@ -120,7 +125,6 @@ section {
                 padding:12px;
             }
         }
-
     }
 }
 
@@ -153,9 +157,7 @@ section {
     article {
         width:500px;
     }
- 
 }
-
 #gallery {
     img {
         width:100%;
@@ -210,32 +212,7 @@ section {
             color: $color-main-blue;
         }
     }
-#mc_embed_signup {
-    width:570px;
-    margin:0 auto 14px;
-    .mc-field-group {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        .email{
-            background: white;
-            border: none;
-            padding:.8rem;
-            border-radius: 10px 0 0 10px;
-        }
-        input[type=submit] {
-            border-radius: 0 10px 10px 0;
-            min-width:auto;
-            width:auto;
-            padding: 0 2rem;
-            cursor:pointer;
-        }
-        input[type=submit]:hover {
-            background: $color-on;
-        }
-    }
 
-}
 
 #mc_embed_signup div.mce_inline_error {
     flex-basis: 100%;
@@ -249,11 +226,107 @@ section {
     color: $color-error;
 
 }
+#mc_embed_signup {
+    width:570px;
+    margin:0 auto 14px;
+    .mc-field-group {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        input[type=submit] {
+            border-radius: 0 10px 10px 0;
+            min-width:auto;
+            width:auto;
+            padding: 0 2rem;
+            cursor:pointer;
+            background: $color-main-blue;
+            border:none;
+        }
+        input[type=submit]:hover {
+            background: $color-on;
+        }
+        label {
+            display:block;
+            padding: .8rem 0;
+        }
+
+    }
+
+}
+}
+
+
 
 #mc_embed_signup .mc-field-group input {
     width:320px;
     margin:0;
+    background: white;
+    border: 1px solid $color-p;
+    padding:.8rem;
+    border-radius: 10px 0 0 10px;
 }
+
+// Contact Us
+
+#contact {
+    input[type=checkbox] {
+        width:auto;
+    }
+    .container {
+        width:70%;
+        margin:2rem auto 0;
+        .fas{
+            color:$color-main-blue;
+            padding:0 1rem 0 0
+        }
+        .contact-info {
+            width:50%;
+        }
+        p {
+            padding:14px 0 0;
+        }
+}
+.mc-field-group {
+    margin: 0 0 1rem;
+    position:relative;
+    &.input-group {
+        margin: 1rem 0;
+    }
+    ul {
+        margin:0 0 2rem 0;
+    }
+    strong {
+        padding: 1rem 0;
+        display: block;
+    }
+    input {
+        border-radius:.4rem;
+    }
+    label {
+        display: block;
+        padding: .8rem 0;
+    }
+    li label {
+        display: inline-block;
+        padding:0;
+    }
+    li input {
+        padding:0;
+        margin: 0 .6rem 0 0;
+    }
+}
+#mc_embed_signup div.mce_inline_error {
+    color: red;
+    font-size: .875rem;
+    top: 10px;
+    position: absolute;
+    left: 150px;
+    background:none;
+    font-weight: 200;
+}
+ p.response {
+     padding:0 0 2rem;
+ }
 }
 
 

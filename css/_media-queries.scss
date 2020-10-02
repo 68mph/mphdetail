@@ -10,7 +10,7 @@
     }
     h3 {
         font-size:1.2rem;
-        line-height: 2rem;
+        line-height: 1.8rem;
     }
     p {
         font-size:1rem;
@@ -27,6 +27,7 @@
         }
     }
 
+
     //Hide for mobile
     // .btns, header nav {
     //     display: none;
@@ -34,8 +35,7 @@
 
 //Global elements
         .logo {
-            width:100px;
-        
+            width:80px;
         }
 
 #content {
@@ -51,6 +51,8 @@
     .title {
         display: block;
         width:100%;
+        padding:0 1rem;
+        margin:2rem 0 0;
         h3 {
             display: block;
 
@@ -58,6 +60,7 @@
     }
     .container {
         flex-direction: column-reverse;
+        margin:2rem 0 0
     }
 
     nav {
@@ -78,7 +81,7 @@
         background: rgba(31, 68, 133, 0.95);
         padding:14px;
         position: absolute;
-        top:104px;
+        top:88px;
         left:0;
         width:100%;
       }
@@ -99,7 +102,7 @@
       
       .navbar-toggle {
         position: absolute;
-        top: 20px;
+        top: 30px;
         right: 20px;
         cursor: pointer;
         color: rgba(255, 255, 255, 0.8);
@@ -114,7 +117,7 @@
 
     .card {
         width:auto;
-        padding: 24px 0;
+        padding: 0 0 2rem;
         text-align: center;
         h3 {
             font-size: 28px;
@@ -150,10 +153,10 @@ header {
     section {
         width:100%;
         padding:0;
-        margin: 40px 0 0;
+        margin: 2rem 0;
         article {
             width:100%;
-            margin:40px 0;
+            margin:2rem 0;
             padding:0 1rem;
             display:block;
             text-align: center;
@@ -202,7 +205,7 @@ header {
         .card-container {
             display:block;
             padding: 0 1rem;
-            margin:0;
+            margin:2rem 0 0;
             .icons {
                 width:100%;
                 margin: 4rem 0;
@@ -218,8 +221,8 @@ header {
             vertical-align: middle;
             padding: 4px;
         }
-        .phone, .email {
-            width:80%;
+        .phone, .mail {
+            width:100%;
             margin: 0 0 12px;
         }
     }
@@ -251,6 +254,9 @@ header {
     width:100%;
     padding:.8rem;
     margin-bottom: 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    opacity:1;
       }
      }
 
@@ -258,8 +264,24 @@ header {
     }
 }
 
+#contact {
+    .container {
+        .contact-info {
+            width:100%;
+            margin:2rem 0 0;
+            p {
+                text-align:left;
+            }
+        }
+        width:100%;
+        margin:0;
+        display: block;
+    }
+   .mc-field-group {
+       text-align: left;
+   }
 
-
+}
 
   footer {
         background-position: bottom left;
@@ -275,9 +297,9 @@ header {
             text-align: center;
             nav {
                 flex-direction: column;
-                margin: 40px 0;
+                margin: 20px 0;
                  a {
-                     padding: 0 0 24px;
+                     padding: 12px 0;
                      color:white;
                      display:block;
                      margin:0;

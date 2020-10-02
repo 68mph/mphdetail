@@ -109,6 +109,10 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  font-size: 16px;
+}
+
 .flex, #services, #products {
   width: 1140px;
   margin: 0 auto;
@@ -121,7 +125,7 @@ html {
 }
 
 .ill, .container aside, #services aside, #products aside {
-  width: 500px;
+  width: 50%;
   height: auto;
 }
 
@@ -175,7 +179,7 @@ html {
 
 section {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   padding: 0 14px;
 }
 
@@ -240,7 +244,7 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin: 80px 0 0;
+  margin: 3rem 0 0;
 }
 
 .card {
@@ -322,8 +326,27 @@ nav a.active {
 }
 
 small {
-  color: #88C6E8;
+  display: block;
+  color: #1293D4;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0 0 .4rem;
   text-transform: uppercase;
+}
+
+.req {
+  font-size: .875rem;
+  float: right;
+}
+
+.asterisk {
+  color: red;
+  font-size: .875rem;
+}
+
+strong {
+  color: #2a2a33;
+  font-size: 1rem;
 }
 
 p {
@@ -338,19 +361,18 @@ p {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   color: #88C6E8;
 }
 
-h1, h2, h3 {
-  color: #ffffff;
+h1, h2, h3, h4 {
+  font-weight: 100;
 }
 
 h1 {
-  font-size: 38px;
+  font-size: 2.4rem;
   line-height: 3.2rem;
   padding: 0 0 2rem;
-  font-weight: 100;
 }
 
 h1 span {
@@ -358,18 +380,25 @@ h1 span {
 }
 
 h2 {
+  color: #2a2a33;
   padding: 0 0 2rem;
-  line-height: 1.4rem;
-  font-size: 18px;
+  line-height: 2.4rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 
 h3 {
-  font-size: 38px;
+  font-size: 2rem;
   color: #2a2a33;
-  font-weight: 400;
   padding: 0 0 1.2rem;
-  line-height: 3rem;
+  line-height: 2.4rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #2a2a33;
+  padding: 0 0 1.2rem;
+  line-height: 2.5rem;
 }
 
 ul {
@@ -385,14 +414,6 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-small {
-  display: block;
-  color: #1293D4;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 0 0 .4rem;
 }
 
 /* Main sectim css */
@@ -427,19 +448,13 @@ section article.grid-4 {
   grid-gap: 0;
 }
 
-section article.grid-4 .service h3 {
-  font-size: 1.4rem;
-  padding: 1rem 0 2rem;
-  font-weight: 400;
-}
-
-section article.grid-4 .service h3 img {
+section article.grid-4 .service h4 img {
   height: 30px;
   vertical-align: middle;
   margin-right: 8px;
 }
 
-section article.grid-4 .service h3 .fa-star {
+section article.grid-4 .service h4 .fa-star {
   color: #1293D4;
   font-size: 1rem;
   padding: 12px;
@@ -454,6 +469,10 @@ section article.grid-4 .service h3 .fa-star {
   max-width: 100%;
 }
 
+#hero h1 {
+  color: white;
+}
+
 #hero .top {
   max-width: 1140px;
   margin: 0 auto;
@@ -464,6 +483,7 @@ section article.grid-4 .service h3 .fa-star {
 }
 
 .container {
+  margin: 3rem 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,6 +497,16 @@ section article.grid-4 .service h3 .fa-star {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.container.rev .title {
+  padding-left: 40px;
+}
+
+.container .title {
+  text-align: left;
+  width: 50%;
+  padding-right: 40px;
 }
 
 .container article {
@@ -508,7 +538,6 @@ section article.grid-4 .service h3 .fa-star {
 #jumbotron {
   max-width: 100%;
   padding: 30px 0;
-  margin: 40px 0;
 }
 
 #jumbotron .inner {
@@ -613,6 +642,19 @@ section article.grid-4 .service h3 .fa-star {
   color: #1293D4;
 }
 
+#jumbotron.email #mc_embed_signup div.mce_inline_error {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background: none;
+  font-weight: 100;
+  font-size: 14px;
+  margin: 0;
+  padding: 14px;
+  position: absolute;
+  bottom: 0;
+  color: #de9d65;
+}
+
 #jumbotron.email #mc_embed_signup {
   width: 570px;
   margin: 0 auto 14px;
@@ -629,41 +671,105 @@ section article.grid-4 .service h3 .fa-star {
       flex-wrap: wrap;
 }
 
-#jumbotron.email #mc_embed_signup .mc-field-group .email {
-  background: white;
-  border: none;
-  padding: .8rem;
-  border-radius: 10px 0 0 10px;
-}
-
 #jumbotron.email #mc_embed_signup .mc-field-group input[type=submit] {
   border-radius: 0 10px 10px 0;
   min-width: auto;
   width: auto;
   padding: 0 2rem;
   cursor: pointer;
+  background: #1293D4;
+  border: none;
 }
 
 #jumbotron.email #mc_embed_signup .mc-field-group input[type=submit]:hover {
   background: #2280af;
 }
 
-#jumbotron.email #mc_embed_signup div.mce_inline_error {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  background: none;
-  font-weight: 100;
-  font-size: 14px;
-  margin: 0;
-  padding: 14px;
-  position: absolute;
-  bottom: 0;
-  color: #de9d65;
+#jumbotron.email #mc_embed_signup .mc-field-group label {
+  display: block;
+  padding: .8rem 0;
 }
 
-#jumbotron.email #mc_embed_signup .mc-field-group input {
+#mc_embed_signup .mc-field-group input {
   width: 320px;
   margin: 0;
+  background: white;
+  border: 1px solid #a1a1a1;
+  padding: .8rem;
+  border-radius: 10px 0 0 10px;
+}
+
+#contact input[type=checkbox] {
+  width: auto;
+}
+
+#contact .container {
+  width: 70%;
+  margin: 2rem auto 0;
+}
+
+#contact .container .fas {
+  color: #1293D4;
+  padding: 0 1rem 0 0;
+}
+
+#contact .container .contact-info {
+  width: 50%;
+}
+
+#contact .container p {
+  padding: 14px 0 0;
+}
+
+#contact .mc-field-group {
+  margin: 0 0 1rem;
+  position: relative;
+}
+
+#contact .mc-field-group.input-group {
+  margin: 1rem 0;
+}
+
+#contact .mc-field-group ul {
+  margin: 0 0 2rem 0;
+}
+
+#contact .mc-field-group strong {
+  padding: 1rem 0;
+  display: block;
+}
+
+#contact .mc-field-group input {
+  border-radius: .4rem;
+}
+
+#contact .mc-field-group label {
+  display: block;
+  padding: .8rem 0;
+}
+
+#contact .mc-field-group li label {
+  display: inline-block;
+  padding: 0;
+}
+
+#contact .mc-field-group li input {
+  padding: 0;
+  margin: 0 .6rem 0 0;
+}
+
+#contact #mc_embed_signup div.mce_inline_error {
+  color: red;
+  font-size: .875rem;
+  top: 10px;
+  position: absolute;
+  left: 150px;
+  background: none;
+  font-weight: 200;
+}
+
+#contact p.response {
+  padding: 0 0 2rem;
 }
 
 footer {
@@ -718,7 +824,7 @@ footer .address a {
   }
   h3 {
     font-size: 1.2rem;
-    line-height: 2rem;
+    line-height: 1.8rem;
   }
   p {
     font-size: 1rem;
@@ -732,7 +838,7 @@ footer .address a {
     line-height: 1.4rem;
   }
   .logo {
-    width: 100px;
+    width: 80px;
   }
   #content {
     width: 100%;
@@ -747,6 +853,8 @@ footer .address a {
   #content .title {
     display: block;
     width: 100%;
+    padding: 0 1rem;
+    margin: 2rem 0 0;
   }
   #content .title h3 {
     display: block;
@@ -756,6 +864,7 @@ footer .address a {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin: 2rem 0 0;
   }
   #content nav {
     display: block;
@@ -774,7 +883,7 @@ footer .address a {
     background: rgba(31, 68, 133, 0.95);
     padding: 14px;
     position: absolute;
-    top: 104px;
+    top: 88px;
     left: 0;
     width: 100%;
   }
@@ -790,7 +899,7 @@ footer .address a {
   }
   #content .navbar-toggle {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 20px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8);
@@ -803,7 +912,7 @@ footer .address a {
   }
   #content .card {
     width: auto;
-    padding: 24px 0;
+    padding: 0 0 2rem;
     text-align: center;
   }
   #content .card h3 {
@@ -836,11 +945,11 @@ footer .address a {
   #content section {
     width: 100%;
     padding: 0;
-    margin: 40px 0 0;
+    margin: 2rem 0;
   }
   #content section article {
     width: 100%;
-    margin: 40px 0;
+    margin: 2rem 0;
     padding: 0 1rem;
     display: block;
     text-align: center;
@@ -882,7 +991,7 @@ footer .address a {
   #content .card-container {
     display: block;
     padding: 0 1rem;
-    margin: 0;
+    margin: 2rem 0 0;
   }
   #content .card-container .icons {
     width: 100%;
@@ -897,8 +1006,8 @@ footer .address a {
     vertical-align: middle;
     padding: 4px;
   }
-  #content #jumbotron .phone, #content #jumbotron .email {
-    width: 80%;
+  #content #jumbotron .phone, #content #jumbotron .mail {
+    width: 100%;
     margin: 0 0 12px;
   }
   #gallery article {
@@ -921,6 +1030,24 @@ footer .address a {
     width: 100%;
     padding: .8rem;
     margin-bottom: 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    opacity: 1;
+  }
+  #contact .container {
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+  #contact .container .contact-info {
+    width: 100%;
+    margin: 2rem 0 0;
+  }
+  #contact .container .contact-info p {
+    text-align: left;
+  }
+  #contact .mc-field-group {
+    text-align: left;
   }
   footer {
     background-position: bottom left;
@@ -941,10 +1068,10 @@ footer .address a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 40px 0;
+    margin: 20px 0;
   }
   footer .inner nav a {
-    padding: 0 0 24px;
+    padding: 12px 0;
     color: white;
     display: block;
     margin: 0;
