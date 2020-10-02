@@ -104,7 +104,14 @@ section {
         border: 1px solid $color-main-blue;
     }
 }
-
+input[type=submit] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity:1;
+    font-size:16px;
+    cursor:pointer;
+    }
 .phone, .mail {
     color:$color-aqua;
     display: inline-block;

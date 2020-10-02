@@ -200,6 +200,15 @@ section {
   border: 1px solid #1293D4;
 }
 
+input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 1;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .phone, .mail {
   color: #88C6E8;
   display: inline-block;
