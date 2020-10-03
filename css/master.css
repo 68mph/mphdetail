@@ -496,6 +496,11 @@ section article.grid-4 .service h4 .fa-star {
   max-width: 100%;
 }
 
+#hero article {
+  margin: 0;
+  padding-bottom: 3rem;
+}
+
 #hero h1 {
   color: white;
 }
@@ -507,6 +512,10 @@ section article.grid-4 .service h4 .fa-star {
 
 #hero .top p {
   color: #C8D6F2;
+}
+
+#hero .img-clean-1 {
+  border-radius: 48px 0 0 0;
 }
 
 .container {
