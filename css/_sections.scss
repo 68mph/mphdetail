@@ -66,8 +66,11 @@ section {
     }
     .img-clean-1 {
         border-radius:48px 0 0 0;
+        box-shadow: none;
     }
 }
+
+
 
 .container {
     margin:3rem 0 0;
@@ -96,6 +99,7 @@ section {
         img {
             width:100%;
             height:auto;
+            box-shadow: $shadow;
         }
     }
 }
@@ -148,6 +152,27 @@ section {
         display: block;
         padding:20px 0
     }
+}
+
+#testimonials {
+
+    .card {
+        width:264px;
+        padding:24px;
+        background: white;
+        box-shadow: $shadow;
+        border-radius:24px;
+        position:relative;
+            &:before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f10d";
+            font-size: 2.8rem;
+            color:$color-lt-blue;
+            display:block;
+            padding-bottom:8px;
+                }
+}
 }
 
 #services {
@@ -338,6 +363,9 @@ section {
 .services {
     margin:3rem 0;
     column-count: 3;
+    li {
+        margin-left: 18px;
+    }
        li:before {
         font-family: 'Font Awesome 5 Free';
         content: '\f35a';

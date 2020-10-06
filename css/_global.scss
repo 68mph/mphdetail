@@ -17,10 +17,12 @@ $color-text-lt: #EFF3FC;
 $color-white: #ffffff;
 $color-p:#a1a1a1;
 $color-aqua: #88C6E8;
+$color-lt-blue: #eaf5fb;
 $color-small: #1293D4;
 $color-hero: #1F448F;
 $color-p-hero: #C8D6F2;
 $color-error: #de9d65;
+$color-shadow: #e0e0e0;
 
 //sizing
 $size_100: 100%;
@@ -29,6 +31,9 @@ $vh: calc(100vh - 54px);
 
 //fonts
 $font_1: 'Poppins', sans-serif;
+
+//shadow
+$shadow: 0 0 24px $color-shadow;
 
 //@extend-elements
 .flex {
@@ -175,7 +180,7 @@ input[type=submit] {
 
 }
 .card {
-    width:268px;
+    width:auto;
     padding:0 24px 0 0;
     img {
         width: 100px;
@@ -187,6 +192,9 @@ input[type=submit] {
         padding: 18px 0;
     }
     p {
-        font-size:16px;
+        font-size:14px;
+    }
+    strong {
+        display:block;
     }
 }

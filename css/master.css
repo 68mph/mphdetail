@@ -266,7 +266,7 @@ input[type=checkbox] {
 }
 
 .card {
-  width: 268px;
+  width: auto;
   padding: 0 24px 0 0;
 }
 
@@ -282,7 +282,11 @@ input[type=checkbox] {
 }
 
 .card p {
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.card strong {
+  display: block;
 }
 
 nav {
@@ -516,6 +520,8 @@ section article.grid-4 .service h4 .fa-star {
 
 #hero .img-clean-1 {
   border-radius: 48px 0 0 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .container {
@@ -560,6 +566,8 @@ section article.grid-4 .service h4 .fa-star {
 .container aside img {
   width: 100%;
   height: auto;
+  -webkit-box-shadow: 0 0 24px #e0e0e0;
+          box-shadow: 0 0 24px #e0e0e0;
 }
 
 #head {
@@ -604,6 +612,26 @@ section article.grid-4 .service h4 .fa-star {
 #faq strong {
   display: block;
   padding: 20px 0;
+}
+
+#testimonials .card {
+  width: 264px;
+  padding: 24px;
+  background: white;
+  -webkit-box-shadow: 0 0 24px #e0e0e0;
+          box-shadow: 0 0 24px #e0e0e0;
+  border-radius: 24px;
+  position: relative;
+}
+
+#testimonials .card:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10d";
+  font-size: 2.8rem;
+  color: #eaf5fb;
+  display: block;
+  padding-bottom: 8px;
 }
 
 #services {
@@ -813,6 +841,10 @@ section article.grid-4 .service h4 .fa-star {
   margin: 3rem 0;
   -webkit-column-count: 3;
           column-count: 3;
+}
+
+.services li {
+  margin-left: 18px;
 }
 
 .services li:before {
