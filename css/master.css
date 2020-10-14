@@ -244,6 +244,10 @@ input[type=checkbox] {
   border-radius: 0 24px 0 0;
 }
 
+.bt-rt-round {
+  border-radius: 0 0 24px 0;
+}
+
 .jumbo-home-bg, #jumbotron {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 81, 155, 0.85)), to(rgba(31, 68, 133, 0.85))), url(../images/bg-promo.jpg);
   background: linear-gradient(rgba(38, 81, 155, 0.85), rgba(31, 68, 133, 0.85)), url(../images/bg-promo.jpg);
