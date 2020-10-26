@@ -197,6 +197,12 @@ section {
   border: none;
   margin-right: 1rem;
   display: inline-block;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .button.second {
@@ -512,7 +518,7 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 #hero .container {
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 #hero .navbar {
@@ -526,7 +532,6 @@ section article.grid-4 .service h4 .fa-star {
 
 #hero article {
   margin: 0;
-  padding-bottom: 3rem;
 }
 
 #hero h1 {
