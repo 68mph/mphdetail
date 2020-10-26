@@ -16,6 +16,10 @@ nav {
       font-weight:400;
       text-transform: uppercase;
       padding:0 3.2rem 0 0;
+      &:hover {
+        color:$color-white;
+        text-decoration: none;
+      }
       &.active {
           color:$color-white;
           font-weight: 500;

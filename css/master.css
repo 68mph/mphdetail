@@ -198,11 +198,14 @@ section {
   margin-right: 1rem;
   display: inline-block;
   text-transform: uppercase;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .button:hover {
   color: #ffffff;
   text-decoration: none;
+  background-color: #0679b3;
 }
 
 .button.second {
@@ -323,6 +326,11 @@ nav a {
   font-weight: 400;
   text-transform: uppercase;
   padding: 0 3.2rem 0 0;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 nav a.active {

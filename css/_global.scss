@@ -11,6 +11,7 @@ html {
 
 //font colors
 $color-main-blue: #1293D4;
+$color-btn-on: #0679b3;
 $color-on: #2280af;
 $color-title:#2a2a33;
 $color-text-lt: #EFF3FC;
@@ -98,7 +99,7 @@ section {
 }
 
 .button {
-    background-color: $color_main_blue ;
+    background-color: $color-main-blue ;
     padding: .8rem;
     text-align: center;
     min-width: 188px;
@@ -108,9 +109,12 @@ section {
     margin-right: 1rem;
     display:inline-block;
     text-transform: uppercase;
+    transition: .5s ease;
+
         &:hover {
             color:$color-white;
             text-decoration:none;
+            background-color: $color-btn-on;
         }
 
     &.second {
