@@ -15,7 +15,7 @@ $color-on: #2280af;
 $color-title:#2a2a33;
 $color-text-lt: #EFF3FC;
 $color-white: #ffffff;
-$color-p:#a1a1a1;
+$color-p:#747272;
 $color-aqua: #88C6E8;
 $color-lt-blue: #eaf5fb;
 $color-small: #1293D4;
@@ -23,6 +23,7 @@ $color-hero: #1F448F;
 $color-p-hero: #C8D6F2;
 $color-error: #de9d65;
 $color-shadow: #e0e0e0;
+$color-footer: #B4B4B4;
 
 //sizing
 $size_100: 100%;
@@ -33,7 +34,7 @@ $vh: calc(100vh - 54px);
 $font_1: 'Poppins', sans-serif;
 
 //shadow
-$shadow: 0 0 24px $color-shadow;
+$shadow: 0 0 74px $color-shadow;
 
 //@extend-elements
 .flex {
@@ -179,16 +180,17 @@ input[type=submit] {
     display: flex;
     justify-content: space-between;
     width:100%;
-    margin: 3rem 0 0;
+    margin: 4.8rem 0;
 
 }
 .card {
     width:auto;
     padding:0 24px 0 0;
+    border:none;
+    display:block;
     img {
-        width: 100px;
+        width: 70px;
         height:auto;
-        margin-bottom:12px;
     }
     h3 {
         font-size: 1.4rem;
@@ -199,5 +201,6 @@ input[type=submit] {
     }
     strong {
         display:block;
+        padding: .6rem 0;
     }
 }

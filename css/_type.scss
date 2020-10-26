@@ -26,7 +26,7 @@ p {
     margin:0;
     line-height: 1.8rem;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 300;
     color: $color-p;
 }
 
@@ -52,6 +52,7 @@ h1 {
     font-size:2.4rem;
     line-height: 3.2rem;
     padding:0 0 2rem;
+    font-weight:300;
     span {
         color: $color-aqua;
     }
@@ -61,19 +62,22 @@ h1 {
         padding:0 0 2rem;
         line-height: 2.4rem;
         font-size: 2rem;
-        font-weight: 100;
+        font-weight: 300;
 }
     h3 {
         font-size:2rem;
         color: $color-title;
         padding:0 0 1.2rem;
-        line-height: 2.4rem ;
+        line-height: 2.6rem ;
+        font-weight: 300;
+
 }
     h4 {
         font-size:1.5rem;
         color: $color-title;
         padding:0 0 1.2rem;
         line-height: 2.5rem ;
+        font-weight: 300;
     }
 
 

@@ -5,12 +5,15 @@
 
 //Typography
     h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height:2.4rem;
     }
+    h2 {
+        font-size:1.8rem;
+    }
     h3 {
-        font-size:1.2rem;
-        line-height: 1.8rem;
+        font-size:1.6rem;
+        line-height: 2rem;
     }
     p {
         font-size:1rem;
@@ -36,6 +39,12 @@
 //Global elements
         .logo {
             width:80px;
+        }
+        .card {
+            width:auto;
+            padding: 2rem 0;
+            text-align: center;
+            display:block;
         }
 
 #content {
@@ -73,8 +82,9 @@
         left:0;
         width:100%;
       }
-    
-      
+      .navbar {
+          position:inherit;
+      }
       .nav-links {
         text-decoration: none;
       }
@@ -103,15 +113,7 @@
         display: block;
       }
 
-    .card {
-        width:auto;
-        padding: 0 0 2rem;
-        text-align: center;
-        h3 {
-            font-size: 28px;
-            line-height: 2.4rem;
-        }
-    }
+
     aside {
         img {
             width:auto;
@@ -194,6 +196,9 @@ header {
             display:block;
             padding: 0 1rem;
             margin:2rem 0 0;
+            .card {
+                width:auto;
+            }
             .icons {
                 width:100%;
                 margin: 4rem 0;
@@ -203,6 +208,9 @@ header {
    
 
     #jumbotron {
+        h4 {
+            font-size:1.2rem;
+        }
         padding:12px;
         margin:0;
         i {
@@ -216,14 +224,18 @@ header {
     }
 
   }
-  #gallery {
-      article {
-          column-count: 1;
-        .text {
-            border-radius:14px 14px 0 0;
-        }  
-      }
+
+#portfolio {
+
+    .gallery {
+        display:block;
+        .column {
+            max-width:100%;
+        }
+    }
+    
 }
+
 
 .services {
     padding:0 2rem;
@@ -257,11 +269,19 @@ header {
     }
 }
 
+#testimonials {
+    .card {
+        width:auto;
+        margin:2rem 0;
+    }
+}
+
 #contact {
     .container {
         .contact-info {
             width:100%;
             margin:2rem 0 0;
+            padding:0;
             p {
                 text-align:left;
             }

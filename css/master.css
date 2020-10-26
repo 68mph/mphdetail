@@ -266,18 +266,19 @@ input[type=checkbox] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin: 3rem 0 0;
+  margin: 4.8rem 0;
 }
 
 .card {
   width: auto;
   padding: 0 24px 0 0;
+  border: none;
+  display: block;
 }
 
 .card img {
-  width: 100px;
+  width: 70px;
   height: auto;
-  margin-bottom: 12px;
 }
 
 .card h3 {
@@ -291,6 +292,7 @@ input[type=checkbox] {
 
 .card strong {
   display: block;
+  padding: .6rem 0;
 }
 
 nav {
@@ -306,6 +308,7 @@ nav {
   margin: 0;
   -ms-flex-item-align: center;
       align-self: center;
+  padding: 0;
 }
 
 nav a {
@@ -380,8 +383,8 @@ p {
   margin: 0;
   line-height: 1.8rem;
   font-size: 16px;
-  font-weight: 100;
-  color: #a1a1a1;
+  font-weight: 300;
+  color: #747272;
 }
 
 ul li {
@@ -390,7 +393,7 @@ ul li {
   line-height: 1.8rem;
   font-size: 16px;
   font-weight: 100;
-  color: #a1a1a1;
+  color: #747272;
 }
 
 a {
@@ -408,6 +411,7 @@ h1 {
   font-size: 2.4rem;
   line-height: 3.2rem;
   padding: 0 0 2rem;
+  font-weight: 300;
 }
 
 h1 span {
@@ -419,14 +423,15 @@ h2 {
   padding: 0 0 2rem;
   line-height: 2.4rem;
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 h3 {
   font-size: 2rem;
   color: #2a2a33;
   padding: 0 0 1.2rem;
-  line-height: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 300;
 }
 
 h4 {
@@ -434,6 +439,7 @@ h4 {
   color: #2a2a33;
   padding: 0 0 1.2rem;
   line-height: 2.5rem;
+  font-weight: 300;
 }
 
 ul {
@@ -499,9 +505,23 @@ section article.grid-4 .service h4 .fa-star {
   position: relative;
 }
 
+/*============= HERO SECTION =============*/
 #hero {
   background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.png);
   max-width: 100%;
+}
+
+#hero .container {
+  margin-top: 2rem;
+}
+
+#hero .navbar {
+  padding: 0;
+}
+
+#hero .navbar a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 #hero article {
@@ -529,7 +549,7 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 .container {
-  margin: 3rem 0 0;
+  margin: 6rem 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,8 +590,8 @@ section article.grid-4 .service h4 .fa-star {
 .container aside img {
   width: 100%;
   height: auto;
-  -webkit-box-shadow: 0 0 24px #e0e0e0;
-          box-shadow: 0 0 24px #e0e0e0;
+  -webkit-box-shadow: 0 0 74px #e0e0e0;
+          box-shadow: 0 0 74px #e0e0e0;
 }
 
 #head {
@@ -581,6 +601,12 @@ section article.grid-4 .service h4 .fa-star {
 
 #intro article .service {
   padding: 14px;
+}
+
+#about .card {
+  display: block;
+  text-align: center;
+  width: 25%;
 }
 
 #jumbotron {
@@ -598,13 +624,18 @@ section article.grid-4 .service h4 .fa-star {
   color: white;
 }
 
-#jumbotron .inner h3 i {
+#jumbotron .inner h4 {
+  color: #88C6E8;
+}
+
+#jumbotron .inner h4 i {
   color: #88C6E8;
   vertical-align: top;
   font-size: 16px;
   padding: 12px;
 }
 
+/*============= FAQ SECTION =============*/
 #faq .card:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -618,14 +649,16 @@ section article.grid-4 .service h4 .fa-star {
   padding: 20px 0;
 }
 
+/*============= TESTIMONIALS SECTION =============*/
 #testimonials .card {
-  width: 264px;
-  padding: 24px;
+  width: 25%;
   background: white;
-  -webkit-box-shadow: 0 0 24px #e0e0e0;
-          box-shadow: 0 0 24px #e0e0e0;
-  border-radius: 24px;
+  -webkit-box-shadow: 0 0 74px #e0e0e0;
+          box-shadow: 0 0 74px #e0e0e0;
+  border-radius: .6rem;
   position: relative;
+  margin: 0 .6rem 2rem;
+  padding: 1rem;
 }
 
 #testimonials .card:before {
@@ -638,6 +671,7 @@ section article.grid-4 .service h4 .fa-star {
   padding-bottom: 8px;
 }
 
+/*============= SERVICES SECTION =============*/
 #services {
   margin-top: 140px;
 }
@@ -651,32 +685,40 @@ section article.grid-4 .service h4 .fa-star {
   width: 500px;
 }
 
-#gallery img {
+/*============= PORTFOLIO SECTION =============*/
+#portfolio {
+  clear: both;
+}
+
+#portfolio .gallery {
+  margin: 2rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
 }
 
-#gallery .text {
-  margin: 0 0 .4rem;
-  background: #1F448F;
-  padding: 24px;
+#portfolio .gallery a {
+  margin: 7px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 20%;
+  flex: 1 0 20%;
 }
 
-#gallery .text h3 {
-  color: white;
-  padding: 0 0 24px;
+#portfolio .gallery .column {
+  -webkit-box-flex: 33%;
+  -ms-flex: 33%;
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
 }
 
-#gallery .text p {
-  color: #C8D6F2;
-}
-
-#gallery article {
-  -webkit-column-count: 2;
-          column-count: 2;
-}
-
-#gallery .grid-item {
-  float: left;
+#portfolio .gallery .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 #products {
@@ -762,7 +804,7 @@ section article.grid-4 .service h4 .fa-star {
   width: 320px;
   margin: 0;
   background: white;
-  border: 1px solid #a1a1a1;
+  border: 1px solid #747272;
   padding: .8rem;
   border-radius: 10px 0 0 10px;
 }
@@ -898,6 +940,7 @@ footer .address .inner {
 footer .address p {
   font-size: .8rem;
   padding: 0 .8rem;
+  color: #B4B4B4;
 }
 
 footer .address a {
@@ -914,12 +957,15 @@ footer .address .rt {
 
 @media screen and (max-width: 800px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 2.4rem;
   }
+  h2 {
+    font-size: 1.8rem;
+  }
   h3 {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
   p {
     font-size: 1rem;
@@ -934,6 +980,12 @@ footer .address .rt {
   }
   .logo {
     width: 80px;
+  }
+  .card {
+    width: auto;
+    padding: 2rem 0;
+    text-align: center;
+    display: block;
   }
   #content {
     width: 100%;
@@ -971,6 +1023,9 @@ footer .address .rt {
     left: 0;
     width: 100%;
   }
+  #content .navbar {
+    position: inherit;
+  }
   #content .nav-links {
     text-decoration: none;
   }
@@ -993,15 +1048,6 @@ footer .address .rt {
   }
   #content .active {
     display: block;
-  }
-  #content .card {
-    width: auto;
-    padding: 0 0 2rem;
-    text-align: center;
-  }
-  #content .card h3 {
-    font-size: 28px;
-    line-height: 2.4rem;
   }
   #content aside img {
     width: auto;
@@ -1077,6 +1123,9 @@ footer .address .rt {
     padding: 0 1rem;
     margin: 2rem 0 0;
   }
+  #content .card-container .card {
+    width: auto;
+  }
   #content .card-container .icons {
     width: 100%;
     margin: 4rem 0;
@@ -1086,6 +1135,9 @@ footer .address .rt {
     padding: 12px;
     margin: 0;
   }
+  #content #jumbotron h4 {
+    font-size: 1.2rem;
+  }
   #content #jumbotron i {
     vertical-align: middle;
     padding: 4px;
@@ -1094,12 +1146,11 @@ footer .address .rt {
     width: 100%;
     margin: 0 0 12px;
   }
-  #gallery article {
-    -webkit-column-count: 1;
-            column-count: 1;
+  #portfolio .gallery {
+    display: block;
   }
-  #gallery article .text {
-    border-radius: 14px 14px 0 0;
+  #portfolio .gallery .column {
+    max-width: 100%;
   }
   .services {
     padding: 0 2rem;
@@ -1125,6 +1176,10 @@ footer .address .rt {
     appearance: none;
     opacity: 1;
   }
+  #testimonials .card {
+    width: auto;
+    margin: 2rem 0;
+  }
   #contact .container {
     width: 100%;
     margin: 0;
@@ -1133,6 +1188,7 @@ footer .address .rt {
   #contact .container .contact-info {
     width: 100%;
     margin: 2rem 0 0;
+    padding: 0;
   }
   #contact .container .contact-info p {
     text-align: left;
