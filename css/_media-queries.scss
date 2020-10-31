@@ -60,7 +60,7 @@
     .title {
         display: block;
         width:100%;
-        padding:0 1rem;
+        padding:0 2rem;
         margin:2rem 0 0;
         h3 {
             display: block;
@@ -194,7 +194,7 @@ header {
         }
         .card-container {
             display:block;
-            padding: 0 1rem;
+            padding: 0 2rem;
             margin:2rem 0 0;
             .card {
                 width:auto;
@@ -230,6 +230,8 @@ header {
     .gallery {
         display:block;
         .column {
+            columns: 100px 2;
+            padding: 0;
             max-width:100%;
         }
     }
@@ -292,6 +294,12 @@ header {
     }
    .mc-field-group {
        text-align: left;
+       ul {
+           display: flex;
+           li {
+               width:50%;
+           }
+       }
    }
 
 }

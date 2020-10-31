@@ -372,7 +372,7 @@ small {
   display: block;
   color: #1293D4;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   padding: 0 0 .4rem;
   text-transform: uppercase;
 }
@@ -566,6 +566,7 @@ section article.grid-4 .service h4 .fa-star {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -714,22 +715,17 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 #portfolio .gallery a {
-  margin: 7px;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 20%;
-  flex: 1 0 20%;
+  margin: 0;
 }
 
 #portfolio .gallery .column {
-  -webkit-box-flex: 33%;
-  -ms-flex: 33%;
-  flex: 33%;
-  max-width: 33%;
+  -webkit-columns: 100px 3;
+          columns: 100px 3;
   padding: 0 4px;
 }
 
 #portfolio .gallery .column img {
-  margin-top: 8px;
+  margin-top: 1rem;
   vertical-align: middle;
   width: 100%;
 }
@@ -1013,7 +1009,7 @@ footer .address .rt {
   #content .title {
     display: block;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin: 2rem 0 0;
   }
   #content .title h3 {
@@ -1133,7 +1129,7 @@ footer .address .rt {
   }
   #content .card-container {
     display: block;
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin: 2rem 0 0;
   }
   #content .card-container .card {
@@ -1163,6 +1159,9 @@ footer .address .rt {
     display: block;
   }
   #portfolio .gallery .column {
+    -webkit-columns: 100px 2;
+            columns: 100px 2;
+    padding: 0;
     max-width: 100%;
   }
   .services {
@@ -1208,6 +1207,14 @@ footer .address .rt {
   }
   #contact .mc-field-group {
     text-align: left;
+  }
+  #contact .mc-field-group ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #contact .mc-field-group ul li {
+    width: 50%;
   }
   nav {
     display: block;
