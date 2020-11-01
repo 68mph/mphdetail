@@ -76,11 +76,12 @@
         list-style-type: none;
         display: none;
         background: rgba(31, 68, 133, 0.95);
-        padding:14px;
+        padding:3rem 2rem;
         position: absolute;
-        top:88px;
+        top:0;
         left:0;
         width:100%;
+        height:100%;
       }
       .navbar {
           position:inherit;
@@ -91,6 +92,11 @@
       
       .main-nav li {
         text-align: center;
+        display:block;
+        a {
+            padding:0;
+            font-size:18px;
+        }
       }
       
       .logo {
@@ -310,8 +316,10 @@ header {
         background:none;
         padding:0;
         min-width:auto;
-        text-align: left;
         color: $color-aqua;
+        a {
+            padding:0;
+        }
         }
     }
   footer {

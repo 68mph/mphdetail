@@ -160,6 +160,14 @@ nav a {
   height: auto;
 }
 
+.page header {
+  padding: .4rem 0;
+}
+
+.page .logo {
+  width: 80px;
+}
+
 .li-icons {
   background-position: 0 8px;
   background-size: 30px auto;
@@ -1026,11 +1034,12 @@ footer .address .rt {
     list-style-type: none;
     display: none;
     background: rgba(31, 68, 133, 0.95);
-    padding: 14px;
+    padding: 3rem 2rem;
     position: absolute;
-    top: 88px;
+    top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
   }
   #content .navbar {
     position: inherit;
@@ -1040,6 +1049,11 @@ footer .address .rt {
   }
   #content .main-nav li {
     text-align: center;
+    display: block;
+  }
+  #content .main-nav li a {
+    padding: 0;
+    font-size: 18px;
   }
   #content .logo {
     font-size: 22px;
@@ -1224,8 +1238,10 @@ footer .address .rt {
     background: none;
     padding: 0;
     min-width: auto;
-    text-align: left;
     color: #88C6E8;
+  }
+  nav .button a {
+    padding: 0;
   }
   footer {
     background-position: bottom left;
