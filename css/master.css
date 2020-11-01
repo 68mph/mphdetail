@@ -166,6 +166,7 @@ nav a {
 
 .page .logo {
   width: 80px;
+  padding: .2rem 0 0;
 }
 
 .li-icons {
@@ -995,9 +996,6 @@ footer .address .rt {
   ul li {
     line-height: 1.4rem;
   }
-  .logo {
-    width: 80px;
-  }
   .card {
     width: auto;
     padding: 2rem 0;
@@ -1013,6 +1011,10 @@ footer .address .rt {
   }
   #content #head {
     margin: 0;
+  }
+  #content .logo {
+    width: auto;
+    height: 50px;
   }
   #content .title {
     display: block;
@@ -1058,10 +1060,11 @@ footer .address .rt {
   #content .logo {
     font-size: 22px;
     margin-top: 10px;
+    padding: 0;
   }
   #content .navbar-toggle {
     position: absolute;
-    top: 30px;
+    top: 25px;
     right: 20px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8);
@@ -1079,8 +1082,7 @@ footer .address .rt {
   #content header {
     display: block;
     max-width: 100%;
-    padding: 0 1rem;
-    text-align: center;
+    padding: 0 2rem;
   }
   #content header .links {
     display: none;
