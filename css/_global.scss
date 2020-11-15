@@ -71,17 +71,8 @@ nav a {
 }
 
 .logo {
-    width: 120px;
+    width: 100px;
     height:auto;
-}
-.page {
-    header {
-        padding:.4rem 0;
-    }
-    .logo {
-        width:80px;
-        padding: .2rem 0 0;
-    }
 }
 .li-icons {
     background-position: 0 8px;
@@ -109,13 +100,12 @@ section {
 
 .button {
     background-color: $color-main-blue ;
-    padding: .8rem;
+    padding: .6rem;
     text-align: center;
     min-width: 188px;
     border-radius: 8px;
     color: $color-text-lt;
     border:none;
-    margin-right: 1rem;
     display:inline-block;
     text-transform: uppercase;
     transition: .5s ease;

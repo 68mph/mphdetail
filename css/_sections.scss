@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin:0 auto 24px;
-    padding:1.4rem 0;
+    padding:.5rem 0;
 }
 
 section {
@@ -25,9 +25,6 @@ section {
         
         .service {
             h4 {
-                // font-size: 1.4rem;;
-                // padding:1rem 0 2rem;
-                // font-weight:400;
                 img {
                     height:30px;
                     vertical-align: middle;
@@ -104,6 +101,7 @@ section {
     width:500px;
     .btns {
         padding:2.4rem 0 0;
+        .button {margin-right:1rem;}
     }
     }
     aside {

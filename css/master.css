@@ -156,17 +156,8 @@ nav a {
 }
 
 .logo {
-  width: 120px;
+  width: 100px;
   height: auto;
-}
-
-.page header {
-  padding: .4rem 0;
-}
-
-.page .logo {
-  width: 80px;
-  padding: .2rem 0 0;
 }
 
 .li-icons {
@@ -198,13 +189,12 @@ section {
 
 .button {
   background-color: #1293D4;
-  padding: .8rem;
+  padding: .6rem;
   text-align: center;
   min-width: 188px;
   border-radius: 8px;
   color: #EFF3FC;
   border: none;
-  margin-right: 1rem;
   display: inline-block;
   text-transform: uppercase;
   -webkit-transition: .5s ease;
@@ -494,7 +484,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto 24px;
-  padding: 1.4rem 0;
+  padding: .5rem 0;
 }
 
 section article {
@@ -604,6 +594,10 @@ section article.grid-4 .service h4 .fa-star {
 
 .container article .btns {
   padding: 2.4rem 0 0;
+}
+
+.container article .btns .button {
+  margin-right: 1rem;
 }
 
 .container aside {
