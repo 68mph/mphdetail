@@ -617,7 +617,11 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 #intro article .service {
-  padding: 14px;
+  -webkit-box-shadow: 0 0 74px #e0e0e0;
+          box-shadow: 0 0 74px #e0e0e0;
+  border-radius: .6rem;
+  margin: 14px;
+  padding: 24px;
 }
 
 #about .card {
