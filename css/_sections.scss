@@ -124,19 +124,17 @@ section {
 #intro {
     article {
         .service {
-            box-shadow: 0 0 74px #e0e0e0;
-            border-radius: .6rem;
-            margin: 14px;
-            padding: 24px;
         }
     }
 }
 
 #about {
     .card {
-        display:block;
-        text-align: center;
         width:25%;
+        img {
+            width:auto;
+            height:90px;
+        }
     }
 }
 
@@ -188,8 +186,6 @@ section {
     .card {
         width:25%;
         background: white;
-        box-shadow: $shadow;
-        border-radius:.6rem;
         position:relative;
         margin:0 .6rem 2rem;
         padding:1rem;
@@ -411,6 +407,7 @@ section {
         content: '\f35a';
         margin: 0 8px 0 -15px;
         color: #0e9fda;
+        font-size:20px;
        }
 }
 

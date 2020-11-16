@@ -278,15 +278,14 @@ input[type=checkbox] {
 }
 
 .card {
-  width: auto;
-  padding: 0 24px 0 0;
-  border: none;
   display: block;
-}
-
-.card img {
-  width: 70px;
-  height: auto;
+  width: auto;
+  padding: 24px;
+  margin: 0 .6rem 1.2rem;
+  border: none;
+  -webkit-box-shadow: 0 0 74px #e0e0e0;
+          box-shadow: 0 0 74px #e0e0e0;
+  border-radius: .6rem;
 }
 
 .card h3 {
@@ -616,18 +615,13 @@ section article.grid-4 .service h4 .fa-star {
   max-width: 100%;
 }
 
-#intro article .service {
-  -webkit-box-shadow: 0 0 74px #e0e0e0;
-          box-shadow: 0 0 74px #e0e0e0;
-  border-radius: .6rem;
-  margin: 14px;
-  padding: 24px;
+#about .card {
+  width: 25%;
 }
 
-#about .card {
-  display: block;
-  text-align: center;
-  width: 25%;
+#about .card img {
+  width: auto;
+  height: 90px;
 }
 
 #jumbotron {
@@ -674,9 +668,6 @@ section article.grid-4 .service h4 .fa-star {
 #testimonials .card {
   width: 25%;
   background: white;
-  -webkit-box-shadow: 0 0 74px #e0e0e0;
-          box-shadow: 0 0 74px #e0e0e0;
-  border-radius: .6rem;
   position: relative;
   margin: 0 .6rem 2rem;
   padding: 1rem;
@@ -914,6 +905,7 @@ section article.grid-4 .service h4 .fa-star {
   content: '\f35a';
   margin: 0 8px 0 -15px;
   color: #0e9fda;
+  font-size: 20px;
 }
 
 footer {
