@@ -988,7 +988,6 @@ footer .address .rt {
   }
   .card {
     width: auto;
-    padding: 2rem 0;
     text-align: center;
     display: block;
   }
@@ -1011,6 +1010,7 @@ footer .address .rt {
     width: 100%;
     padding: 0 2rem;
     margin: 2rem 0 0;
+    text-align: center;
   }
   #content .title h3 {
     display: block;
@@ -1135,7 +1135,7 @@ footer .address .rt {
   }
   #content .card-container {
     display: block;
-    padding: 0 2rem;
+    padding: 0 1rem;
     margin: 2rem 0 0;
   }
   #content .card-container .card {
