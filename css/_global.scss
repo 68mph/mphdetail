@@ -11,7 +11,7 @@ html {
 
 //font colors
 $color-main-blue: #1293D4;
-$color-btn-on: #0679b3;
+$color-btn-on: #1F448F;
 $color-on: #2280af;
 $color-title:#2a2a33;
 $color-text-lt: #EFF3FC;
@@ -109,6 +109,7 @@ section {
     display:inline-block;
     text-transform: uppercase;
     transition: .5s ease;
+    border:1px solid $color-main-blue;
 
         &:hover {
             color:$color-white;
@@ -119,6 +120,9 @@ section {
     &.second {
         background:$color-hero;
         border: 1px solid $color-main-blue;
+        &:hover {
+            background-color: $color-main-blue ;
+        }
     }
 }
 input[type=submit] {
@@ -198,6 +202,14 @@ input[type=submit] {
     border:none;
     box-shadow: $shadow;
     border-radius:.6rem;
+    transition: .5s ease;
+    &:hover {
+        background: $color-hero;
+        h3, h4, p {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
     h3 {
         font-size: 1.4rem;
         padding: 18px 0;

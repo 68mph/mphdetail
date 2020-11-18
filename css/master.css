@@ -199,17 +199,22 @@ section {
   text-transform: uppercase;
   -webkit-transition: .5s ease;
   transition: .5s ease;
+  border: 1px solid #1293D4;
 }
 
 .button:hover {
   color: #ffffff;
   text-decoration: none;
-  background-color: #0679b3;
+  background-color: #1F448F;
 }
 
 .button.second {
   background: #1F448F;
   border: 1px solid #1293D4;
+}
+
+.button.second:hover {
+  background-color: #1293D4;
 }
 
 input[type=submit] {
@@ -286,6 +291,17 @@ input[type=checkbox] {
   -webkit-box-shadow: 0 0 74px #e0e0e0;
           box-shadow: 0 0 74px #e0e0e0;
   border-radius: .6rem;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.card:hover {
+  background: #1F448F;
+}
+
+.card:hover h3, .card:hover h4, .card:hover p {
+  color: #fff;
+  text-decoration: none;
 }
 
 .card h3 {
@@ -413,6 +429,10 @@ a {
   font-size: 16px;
   color: #88C6E8;
   line-height: 1.8rem;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 h1, h2, h3, h4 {
