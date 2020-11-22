@@ -27,6 +27,15 @@ nav {
   }
 
 }
+.navbar {
+  padding:0;
+  margin:0;
+  border:none;
+  a:hover {
+      color:$color-white;
+      text-decoration: none;
+  }
+
     .main-nav {
       display: flex;
       flex-direction: row;
@@ -44,10 +53,20 @@ nav {
     .navbar-toggle {
       display: none;
     }
-  
-    .logo:hover,
+
     .nav-links:hover {
       color: rgba(255, 255, 255, 1);
     }
-  
+    .dropdown-menu {
+      min-width:220px;
+      background: #022773;
+      padding:0;
+    }
+    .dropdown-item {
+      border-bottom:1px solid #5c677c;
+      display: block;
+      padding:.6rem .6rem;
+      font-size:14px;
+    }
+  }
   

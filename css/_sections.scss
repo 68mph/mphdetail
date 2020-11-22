@@ -50,13 +50,6 @@ section {
     .container {
       margin-top:0;
     }
-    .navbar {
-        padding:0;
-        a:hover {
-            color:$color-white;
-            text-decoration: none;
-        }
-    }
     article {
         margin:0;
     }
@@ -262,7 +255,7 @@ section {
 }
 
 //Email signup
-#jumbotron.email{
+#jumbotron.contact{
     position:relative;
     h3 {
         padding:0;
@@ -322,7 +315,7 @@ section {
     width:320px;
     margin:0;
     background: white;
-    border: 1px solid $color-p;
+    border: 1px solid $color-footer;
     padding:.8rem;
     border-radius: 10px 0 0 10px;
 }

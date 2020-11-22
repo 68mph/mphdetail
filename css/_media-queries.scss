@@ -22,6 +22,7 @@
     .button {
         width:100%;
         margin: 0 0 1rem;
+        border:none;
     }
 
     ul {
@@ -87,6 +88,19 @@
       }
       .navbar {
           position:inherit;
+          min-height:auto;
+          .dropdown-menu {
+              display:block;
+              position:relative;
+              background: none;
+              box-shadow:none;
+              float:none;
+              .dropdown-item {
+                  border:none;
+                  padding: .6rem 0 0;
+                  font-size:16px;
+              }
+          }
       }
       .nav-links {
         text-decoration: none;
@@ -116,6 +130,8 @@
         font-size: 24px;
         z-index: 2;
         display:block;
+        margin:0;
+        padding:0;
       }
       
       .active {
