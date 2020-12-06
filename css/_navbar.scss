@@ -24,6 +24,10 @@ nav {
           color:$color-white;
           font-weight: 500;
       }
+      &:focus {
+        color:$color-white;
+        text-decoration: none;
+      }
   }
 
 }

@@ -71,7 +71,7 @@ section {
 }
 
 .container {
-    margin:6rem 0 0;
+    margin:5rem 0 0;
     display: flex;
     padding:0;
     justify-content: space-between;
@@ -85,6 +85,28 @@ section {
         text-align: left;
         width:50%;
         padding-right:40px;
+        .step {
+            display:flex;
+            margin: 1.4rem 0;
+            big {
+                padding:1rem;
+                color:white;
+                background: $color-step;
+                margin: 0 1rem 0 0;
+                height: 60px;
+                width: 60px;
+                border-radius: 4px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 1.4rem;
+            }
+            h4 {
+                padding:0;
+                line-height: auto;
+                font-weight: 500;
+
+            }
+        }
     }
     article {
     width:500px;
