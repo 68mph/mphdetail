@@ -578,6 +578,8 @@ section article.grid-4 .service h4 .fa-star {
 
 #hero article {
   margin: 0;
+  width: 50%;
+  padding: 0 3rem 0 0;
 }
 
 #hero h1 {
@@ -649,7 +651,6 @@ section article.grid-4 .service h4 .fa-star {
 
 .container .title .step h4 {
   padding: 0;
-  line-height: auto;
   font-weight: 500;
 }
 
@@ -1089,6 +1090,13 @@ footer .address .rt {
             flex-direction: column-reverse;
     margin: 2rem 0 0;
   }
+  #content .container .title .step {
+    display: block;
+  }
+  #content .container .title .step big {
+    margin: 1rem;
+    display: inline-block;
+  }
   #content .main-nav {
     list-style-type: none;
     display: none;
@@ -1201,9 +1209,6 @@ footer .address .rt {
   }
   #content #hero {
     margin: 0;
-  }
-  #content #hero .top .container {
-    display: block;
   }
   #content #hero .top .container article {
     width: 100%;

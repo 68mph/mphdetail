@@ -72,7 +72,16 @@
     }
     .container {
         flex-direction: column-reverse;
-        margin:2rem 0 0
+        margin:2rem 0 0;
+        .title {
+            .step {
+                display: block;
+                big {
+                    margin:1rem;
+                    display: inline-block;
+                }
+            }
+        }
     }
       
       .main-nav {
@@ -196,7 +205,6 @@ header {
     #hero {
     margin:0;
         .top .container {
-        display: block;
         article {
             width:100%;
             margin:0;
