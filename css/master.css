@@ -566,6 +566,10 @@ section article.grid-4 .service h4 .fa-star {
   position: relative;
 }
 
+.modal-open {
+  overflow: visible;
+}
+
 /*============= HERO SECTION =============*/
 #hero {
   background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.png);
@@ -784,8 +788,8 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 #portfolio .gallery .column {
-  -webkit-columns: 100px 3;
-          columns: 100px 3;
+  -webkit-columns: 100px 4;
+          columns: 100px 4;
   padding: 0 4px;
 }
 
@@ -989,16 +993,63 @@ footer .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 0 0;
+  padding: 32px 0 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .inner .branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 24px 74px 0 24px;
+}
+
+footer .inner .branding p {
+  padding: 0 24px 0;
+}
+
+footer .inner div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+  padding: 24px 24px 0 0;
+}
+
+footer .inner div strong {
+  color: white;
+  display: block;
+  font-weight: 500;
+  padding: 0 0 8px;
+}
+
+footer .inner div p {
+  color: white;
+  display: block;
+  line-height: 1.4rem;
+  font-size: 14px;
+}
+
+footer .inner div a {
+  display: block;
+  font-size: 14px;
+  line-height: 1.4rem;
 }
 
 footer .inner .logo {
-  padding: 20px 0;
+  padding: 0 22px 0;
+  width: 135px;
+}
+
+footer .inner .branding p {
+  display: inline;
 }
 
 footer .address {
@@ -1344,19 +1395,19 @@ footer .address .rt {
   footer .inner .rt {
     display: block;
   }
-  footer .inner nav {
+  footer .inner div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 20px 0;
   }
-  footer .inner nav a {
+  footer .inner div a {
     padding: 12px 0;
     display: block;
     margin: 0;
   }
-  footer .inner nav .phone, footer .inner nav .email {
+  footer .inner div .phone, footer .inner div .email {
     margin: 14px;
     padding: 14px;
   }

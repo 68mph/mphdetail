@@ -45,6 +45,8 @@ section {
     position: relative;
 }
 
+.modal-open {overflow:visible;}
+
 /*============= HERO SECTION =============*/
 #hero {
     .container {
@@ -248,7 +250,7 @@ section {
         margin: 0;
       }
       .column {
-        columns: 100px 3;
+        columns: 100px 4;
         padding: 0 4px;
         img {
             margin-top: 1rem;
@@ -433,11 +435,48 @@ section {
             max-width:1140px;
             margin: 0 auto;
             display:flex;
-            padding: 20px 0 0;
+            padding: 32px 0 0;
             justify-content:space-between;
-            flex-wrap:wrap;
+            align-items: flex-start;
+            .branding {
+                display: flex;
+                flex:2;
+                padding:24px 74px 0 24px;
+                p {
+                    padding:0 24px 0;
+                }
+            }
+            div {
+                flex: 1 1 0px;
+                padding: 24px 24px 0 0;
+                strong{
+                    color:white;
+                    display:block;
+                    font-weight: 500;
+                    padding:0 0 8px;
+                }
+                p {
+                    color:white;
+                    display:block; 
+                    line-height: 1.4rem;
+                    font-size:14px;
+
+                }
+                a {
+                    display:block; 
+                    font-size:14px;
+                    line-height: 1.4rem;
+                }
+
+            }
             .logo {
-                padding:20px 0
+                padding:0 22px 0;
+                width:135px;
+            }
+            .branding {
+                p {
+                    display:inline;
+                }
             }
         }
         .address {
