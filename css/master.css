@@ -238,6 +238,7 @@ input[type=checkbox] {
   padding: 20px;
   border: 1px solid #708eca;
   background: rgba(3, 29, 90, 0.3);
+  min-width: 240px;
 }
 
 .phone i, .mail i {
@@ -698,7 +699,7 @@ section article.grid-4 .service h4 .fa-star {
 
 #jumbotron {
   max-width: 100%;
-  padding: 30px 0;
+  padding: 3.6rem 0;
 }
 
 #jumbotron .inner {
@@ -1396,15 +1397,19 @@ footer .address .rt {
   footer .inner .rt {
     display: block;
   }
+  footer .inner .branding {
+    padding: 1rem .6rem;
+  }
   footer .inner div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 20px 0;
+    padding: 1rem 0;
   }
   footer .inner div a {
-    padding: 12px 0;
+    padding: .2rem 0;
     display: block;
     margin: 0;
   }

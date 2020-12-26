@@ -366,11 +366,15 @@ header {
             width:100%;
             display:block;
             text-align: center;
+            .branding {
+                padding: 1rem .6rem;;
+            }
             div {
                 flex-direction: column;
                 margin: 20px 0;
+                padding: 1rem 0;
                  a {
-                     padding: 12px 0;
+                     padding: .2rem 0;
                      display:block;
                      margin:0;
                  }
