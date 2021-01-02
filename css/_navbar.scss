@@ -16,7 +16,6 @@ nav {
       font-weight:400;
       text-transform: uppercase;
       padding:0 3.2rem 0 0;
-      line-height: 1.2rem;;
       &:hover {
         color:$color-white;
         text-decoration: none;
@@ -45,6 +44,7 @@ nav {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
+      align-items: center;
     }
   
     .main-nav li {
@@ -70,8 +70,9 @@ nav {
     .dropdown-item {
       border-bottom:1px solid #5c677c;
       display: block;
-      padding:.6rem .6rem;
+      padding:1rem .6rem;
       font-size:14px;
+      line-height: 1.2rem;
     }
   }
   

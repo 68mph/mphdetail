@@ -194,7 +194,6 @@ section {
   min-width: 188px;
   border-radius: 8px;
   color: #EFF3FC;
-  border: none;
   display: inline-block;
   text-transform: uppercase;
   -webkit-transition: .5s ease;
@@ -224,6 +223,7 @@ input[type=submit] {
   opacity: 1;
   font-size: 16px;
   cursor: pointer;
+  line-height: 1.8rem;
 }
 
 input[type=checkbox] {
@@ -341,7 +341,6 @@ nav a {
   font-weight: 400;
   text-transform: uppercase;
   padding: 0 3.2rem 0 0;
-  line-height: 1.2rem;
 }
 
 nav a:hover {
@@ -381,6 +380,9 @@ nav a:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .main-nav li {
@@ -408,8 +410,9 @@ nav a:focus {
 .navbar .dropdown-item {
   border-bottom: 1px solid #5c677c;
   display: block;
-  padding: .6rem .6rem;
+  padding: 1rem .6rem;
   font-size: 14px;
+  line-height: 1.2rem;
 }
 
 small {
@@ -452,6 +455,11 @@ ul li {
   font-size: 16px;
   font-weight: 100;
   color: #747272;
+  list-style-type: none;
+  padding: 0.6rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 a {
@@ -503,21 +511,6 @@ h4 {
   line-height: 2.5rem;
   font-weight: 300;
   display: block;
-}
-
-ul {
-  list-style-type: none;
-  color: #2a2a33;
-}
-
-ul li {
-  padding: 0.6rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /* Main sectim css */
@@ -845,41 +838,6 @@ section article.grid-4 .service h4 .fa-star {
   color: #de9d65;
 }
 
-#jumbotron.contact #mc_embed_signup {
-  width: 570px;
-  margin: 0 auto 14px;
-}
-
-#jumbotron.contact #mc_embed_signup .mc-field-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#jumbotron.contact #mc_embed_signup .mc-field-group input[type=submit] {
-  border-radius: 0 10px 10px 0;
-  min-width: auto;
-  width: auto;
-  padding: 0 2rem;
-  cursor: pointer;
-  background: #1293D4;
-  border: none;
-}
-
-#jumbotron.contact #mc_embed_signup .mc-field-group input[type=submit]:hover {
-  background: #2280af;
-}
-
-#jumbotron.contact #mc_embed_signup .mc-field-group label {
-  display: block;
-  padding: .8rem 0;
-}
-
 #mc_embed_signup .mc-field-group input {
   width: 320px;
   margin: 0;
@@ -890,7 +848,7 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 #contact input[type=checkbox] {
-  width: auto;
+  width: 20px;
   height: 20px;
 }
 
