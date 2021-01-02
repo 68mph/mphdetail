@@ -674,6 +674,7 @@ section article.grid-4 .service h4 .fa-star {
   height: auto;
   -webkit-box-shadow: 0 0 74px #e0e0e0;
           box-shadow: 0 0 74px #e0e0e0;
+  margin: 0 0 2rem;
 }
 
 #head {
