@@ -236,13 +236,13 @@ input[type=checkbox] {
   display: inline-block;
   margin: 0 12px;
   padding: 20px;
-  border: 1px solid #708eca;
-  background: rgba(3, 29, 90, 0.3);
-  min-width: 240px;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .phone i, .mail i {
   padding-right: 8px;
+  color: #88C6E8;
 }
 
 .email a {
@@ -263,8 +263,8 @@ input[type=checkbox] {
 }
 
 .jumbo-home-bg, #jumbotron {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 81, 155, 0.85)), to(rgba(31, 68, 133, 0.85))), url(../images/bg-promo.jpg);
-  background: linear-gradient(rgba(38, 81, 155, 0.85), rgba(31, 68, 133, 0.85)), url(../images/bg-promo.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 81, 155, 0.65)), to(rgba(31, 68, 133, 0.65))), url(../images/bg-promo.jpg);
+  background: linear-gradient(rgba(38, 81, 155, 0.65), rgba(31, 68, 133, 0.65)), url(../images/bg-promo.jpg);
 }
 
 .jumbo-about-img {
@@ -706,15 +706,15 @@ section article.grid-4 .service h4 .fa-star {
   color: white;
 }
 
-#jumbotron .inner h4 {
-  color: #ffffff;
+#jumbotron .inner p {
+  color: #C8D6F2;
 }
 
-#jumbotron .inner h4 i {
+#jumbotron .inner p i {
   color: #88C6E8;
   vertical-align: top;
   font-size: 16px;
-  padding: 12px;
+  padding: 4px;
 }
 
 /*============= FAQ SECTION =============*/
