@@ -598,6 +598,7 @@ section article.grid-4 .service h4 .fa-star {
   border-radius: 48px 0 0 0;
   -webkit-box-shadow: none;
           box-shadow: none;
+  margin: 0;
 }
 
 .container {
@@ -658,7 +659,7 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 .container article .btns {
-  padding: 2rem 0 0;
+  padding: 1rem 0 0;
 }
 
 .container article .btns .button {

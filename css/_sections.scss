@@ -71,6 +71,7 @@ section {
     .img-clean-1 {
         border-radius:48px 0 0 0;
         box-shadow: none;
+        margin:0;
     }
 }
 
@@ -114,7 +115,7 @@ section {
     article {
     width:500px;
     .btns {
-        padding:2rem 0 0;
+        padding:1rem 0 0;
         .button {margin-right:1rem;}
     }
     }
@@ -133,13 +134,6 @@ section {
 #head {
     background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.png);
     max-width:100%;
-}
-
-#intro {
-    article {
-        .service {
-        }
-    }
 }
 
 #about {
