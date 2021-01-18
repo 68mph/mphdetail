@@ -649,9 +649,8 @@ section article.grid-4 .service h4 .fa-star {
   font-size: 1.4rem;
 }
 
-.container .title .step h4 {
+.container .title h4 {
   padding: 0;
-  font-weight: 500;
 }
 
 .container article {
