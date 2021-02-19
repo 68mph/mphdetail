@@ -1,8 +1,9 @@
-/* Main sectim css */
+/* Main section css */
 
 
 body {
     font-family: $font_1;
+    height:100%;
 }
 
 header {
@@ -43,6 +44,8 @@ section {
 
 #content {
     position: relative;
+    min-height:100%;
+    padding-bottom:300px;
 }
 
 .modal-open {overflow:visible;}
@@ -191,7 +194,6 @@ section {
 
     .card {
         width:25%;
-        background: white;
         position:relative;
         margin:0 .6rem 2rem;
         padding:1rem;
@@ -394,7 +396,7 @@ section {
 
     footer {
         background-color: $color-hero;
-        position: relative;
+        position: absolute;
         bottom:0;
         width:100%;
         margin-top:100px;

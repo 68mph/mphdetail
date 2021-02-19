@@ -107,6 +107,7 @@ input, select {
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 :root {
@@ -300,9 +301,13 @@ input[type=checkbox] {
   background: #1F448F;
 }
 
-.card:hover h3, .card:hover h4, .card:hover p {
-  color: #fff;
+.card:hover h3, .card:hover h4, .card:hover p, .card:hover strong {
+  color: #ebe9e9;
   text-decoration: none;
+}
+
+.card:hover ::before {
+  color: #1293D4;
 }
 
 .card h3 {
@@ -513,9 +518,10 @@ h4 {
   display: block;
 }
 
-/* Main sectim css */
+/* Main section css */
 body {
   font-family: "Poppins", sans-serif;
+  height: 100%;
 }
 
 header {
@@ -559,6 +565,8 @@ section article.grid-4 .service h4 .fa-star {
 
 #content {
   position: relative;
+  min-height: 100%;
+  padding-bottom: 300px;
 }
 
 .modal-open {
@@ -734,7 +742,6 @@ section article.grid-4 .service h4 .fa-star {
 /*============= TESTIMONIALS SECTION =============*/
 #testimonials .card {
   width: 25%;
-  background: white;
   position: relative;
   margin: 0 .6rem 2rem;
   padding: 1rem;
@@ -942,7 +949,7 @@ section article.grid-4 .service h4 .fa-star {
 
 footer {
   background-color: #1F448F;
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
   margin-top: 100px;
