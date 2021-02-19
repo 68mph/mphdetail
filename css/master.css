@@ -575,7 +575,8 @@ section article.grid-4 .service h4 .fa-star {
 
 /*============= HERO SECTION =============*/
 #hero {
-  background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.png);
+  background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.jpg);
+  background-size: cover;
   max-width: 100%;
 }
 

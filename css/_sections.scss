@@ -63,7 +63,8 @@ section {
     h1 {
         color:white;
     }
-    background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.png);
+    background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.jpg);
+    background-size: cover;
     max-width:100%;
     .top { max-width:1140px;
         margin:0 auto;
