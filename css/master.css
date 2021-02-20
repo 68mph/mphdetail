@@ -125,7 +125,7 @@ html {
           justify-content: space-between;
 }
 
-.ill, .container aside, #services aside, #products aside {
+.ill, #services aside, #products aside {
   width: 50%;
   height: auto;
 }
@@ -142,7 +142,7 @@ nav a {
       grid-template-columns: repeat(2, 50%);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 16px;
 }
 
 .grid-6 {
@@ -183,7 +183,7 @@ nav a {
 }
 
 section {
-  max-width: 1140px;
+  max-width: 1170px;
   margin: 0 auto 3rem;
   padding: 0 14px;
 }
@@ -264,13 +264,8 @@ input[type=checkbox] {
 }
 
 .jumbo-home-bg, #jumbotron {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 81, 155, 0.65)), to(rgba(31, 68, 133, 0.65))), url(../images/bg-promo.jpg);
-  background: linear-gradient(rgba(38, 81, 155, 0.65), rgba(31, 68, 133, 0.65)), url(../images/bg-promo.jpg);
-}
-
-.jumbo-about-img {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 81, 155, 0.85)), to(rgba(31, 68, 133, 0.85))), url(../images/bg-promo-about.jpg);
-  background: linear-gradient(rgba(38, 81, 155, 0.85), rgba(31, 68, 133, 0.85)), url(../images/bg-promo-about.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 106, 210, 0.65)), to(rgba(0, 20, 53, 0.65))), url(../images/bg-promo.jpg);
+  background: linear-gradient(rgba(45, 106, 210, 0.65), rgba(0, 20, 53, 0.65)), url(../images/bg-promo.jpg);
 }
 
 .card-container {
@@ -281,20 +276,23 @@ input[type=checkbox] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin: 4.8rem 0;
+  margin: 3.6rem 0;
+  gap: 16px;
 }
 
 .card {
   display: block;
   width: auto;
   padding: 24px;
-  margin: 0 .6rem 1.2rem;
   border: none;
   -webkit-box-shadow: 0 0 74px #e0e0e0;
           box-shadow: 0 0 74px #e0e0e0;
   border-radius: .6rem;
   -webkit-transition: .5s ease;
   transition: .5s ease;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .card:hover {
@@ -548,7 +546,6 @@ section article.grid-4 {
       grid-template-columns: repeat(2, 50%);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-gap: 0;
 }
 
 section article.grid-4 .service h4 img {
@@ -575,7 +572,7 @@ section article.grid-4 .service h4 .fa-star {
 
 /*============= HERO SECTION =============*/
 #hero {
-  background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.jpg);
+  background: linear-gradient(162deg, #0281c5e8 0%, #042580 100%), url(../images/bg-hero.jpg);
   background-size: cover;
   max-width: 100%;
 }
@@ -630,12 +627,13 @@ section article.grid-4 .service h4 .fa-star {
 
 .container.rev .title {
   padding-left: 40px;
+  margin: 0;
 }
 
 .container .title {
   text-align: left;
-  width: 50%;
   padding-right: 40px;
+  margin: 0;
 }
 
 .container .title .step {
@@ -687,15 +685,12 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 #head {
-  background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.png);
+  background: linear-gradient(162deg, #0281c5e8 0%, #042580 100%), url(../images/bg-hero.jpg);
   max-width: 100%;
+  background-size: cover;
 }
 
-#about .card {
-  width: 25%;
-}
-
-#about .card img {
+#about img {
   width: auto;
   height: 90px;
 }
@@ -741,13 +736,6 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 /*============= TESTIMONIALS SECTION =============*/
-#testimonials .card {
-  width: 25%;
-  position: relative;
-  margin: 0 .6rem 2rem;
-  padding: 1rem;
-}
-
 #testimonials .card:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -1085,6 +1073,7 @@ footer .address .rt {
     background-repeat: no-repeat;
     background-size: 240px auto;
     position: relative;
+    padding: 0;
   }
   #content #head {
     margin: 0;

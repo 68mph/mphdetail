@@ -63,7 +63,7 @@ nav a {
     display:grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap:2rem;
+    grid-gap:16px;
 }
 
 .grid-6 {
@@ -97,7 +97,7 @@ nav a {
         margin:0 auto;
     }
 section {
-    max-width:1140px;
+    max-width:1170px;
     margin:0 auto 3rem;
     padding: 0 14px;
 }
@@ -179,35 +179,28 @@ input[type=submit] {
 .jumbo-home-bg {
     background: 
     linear-gradient(
-        rgba(38, 81, 155, 0.65), 
-        rgba(31, 68, 133, 0.65)
+        rgba(45, 106, 210, 0.65), 
+        rgba(0, 20, 53, 0.65)
       ),
     url(../images/bg-promo.jpg);
-}
-.jumbo-about-img {
-    background: 
-    linear-gradient(
-        rgba(38, 81, 155, 0.85), 
-        rgba(31, 68, 133, 0.85)
-      ),
-    url(../images/bg-promo-about.jpg);
 }
 .card-container {
     display: flex;
     justify-content: space-between;
     width:100%;
-    margin: 4.8rem 0;
+    margin: 3.6rem 0;
+    gap:16px;
 
 }
 .card {
     display:block;
     width:auto;
     padding:24px;
-    margin:0 .6rem 1.2rem;;
     border:none;
     box-shadow: $shadow;
     border-radius:.6rem;
     transition: .5s ease;
+    flex:1;
     &:hover {
         background: $color-hero;
         h3, h4, p, strong {

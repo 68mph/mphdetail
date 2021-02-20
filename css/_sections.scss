@@ -21,9 +21,7 @@ section {
             width:100%;
             display:grid;
             grid-template-columns: repeat(2, 50%);
-            grid-template-rows: repeat(2, 1fr);
-            grid-gap:0;
-        
+            grid-template-rows: repeat(2, 1fr);        
         .service {
             h4 {
                 img {
@@ -63,7 +61,7 @@ section {
     h1 {
         color:white;
     }
-    background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.jpg);
+    background: linear-gradient(162deg, #0281c5e8 0%, #042580 100%), url(../images/bg-hero.jpg);
     background-size: cover;
     max-width:100%;
     .top { max-width:1140px;
@@ -88,12 +86,14 @@ section {
         flex-direction: row-reverse;
         .title {
             padding-left:40px;
+            margin:0;
         }
     }
     .title {
         text-align: left;
-        width:50%;
         padding-right:40px;
+        margin:0;
+
         .step {
             display:flex;
             margin: 1.4rem 0;
@@ -122,7 +122,6 @@ section {
     }
     }
     aside {
-    @extend .ill;
         margin:0;
         img {
             width:100%;
@@ -134,19 +133,17 @@ section {
 }
 
 #head {
-    background: linear-gradient(162deg, #1d7fb4e8 0%, #1f448f 40%, #1f448f 100%), url(../images/bg-hero.png);
+    background: linear-gradient(162deg, #0281c5e8 0%, #042580 100%), url(../images/bg-hero.jpg);
     max-width:100%;
+    background-size: cover;
 }
 
 #about {
-    .card {
-        width:25%;
         img {
             width:auto;
             height:90px;
         }
     }
-}
 
 //JUmbotron
 #jumbotron {
@@ -194,10 +191,6 @@ section {
 #testimonials {
 
     .card {
-        width:25%;
-        position:relative;
-        margin:0 .6rem 2rem;
-        padding:1rem;
             &:before {
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
