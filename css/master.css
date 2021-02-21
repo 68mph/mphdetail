@@ -179,13 +179,12 @@ nav a {
 .title {
   text-align: center;
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
 }
 
 section {
   max-width: 1170px;
-  margin: 0 auto 3rem;
-  padding: 0 14px;
+  margin: 0 auto 4rem;
 }
 
 .button {
@@ -276,7 +275,6 @@ input[type=checkbox] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin: 3.6rem 0;
   gap: 16px;
 }
 
@@ -427,11 +425,6 @@ small {
   text-transform: uppercase;
 }
 
-.req {
-  font-size: .875rem;
-  float: right;
-}
-
 .asterisk {
   color: red;
   font-size: .875rem;
@@ -443,7 +436,7 @@ strong {
 }
 
 p {
-  padding: 0 0 1rem;
+  padding: 0;
   margin: 0;
   line-height: 1.8rem;
   font-size: 16px;
@@ -454,7 +447,7 @@ p {
 ul li {
   padding: 0;
   margin: 0;
-  line-height: 1.8rem;
+  line-height: 2.4rem;
   font-size: 16px;
   font-weight: 100;
   color: #747272;
@@ -534,10 +527,6 @@ header {
   padding: .5rem 0;
 }
 
-section article {
-  margin: 3rem 0;
-}
-
 section article.grid-4 {
   width: 100%;
   display: -ms-grid;
@@ -608,7 +597,7 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 .container {
-  margin: 3rem 0 0;
+  margin: 0 0 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,7 +670,7 @@ section article.grid-4 .service h4 .fa-star {
   height: auto;
   -webkit-box-shadow: 0 0 74px #e0e0e0;
           box-shadow: 0 0 74px #e0e0e0;
-  margin: 0 0 2rem;
+  margin: 0;
 }
 
 #head {
@@ -766,7 +755,6 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 #portfolio .gallery {
-  margin: 2rem 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -782,7 +770,6 @@ section article.grid-4 .service h4 .fa-star {
 #portfolio .gallery .column {
   -webkit-columns: 100px 4;
           columns: 100px 4;
-  padding: 0 4px;
 }
 
 #portfolio .gallery .column img {
@@ -849,8 +836,11 @@ section article.grid-4 .service h4 .fa-star {
   height: 20px;
 }
 
+#contact .req {
+  font-size: .875rem;
+}
+
 #contact .container {
-  width: 70%;
   margin: 2rem auto 0;
 }
 
@@ -859,12 +849,12 @@ section article.grid-4 .service h4 .fa-star {
   padding: 0 1rem 0 0;
 }
 
-#contact .container .contact-info {
-  width: 50%;
-}
-
 #contact .container p {
   padding: 14px 0 0;
+}
+
+#contact #mc_embed_signup {
+  margin-top: 2rem;
 }
 
 #contact .mc-field-group {
@@ -919,13 +909,14 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 .services {
-  margin: 3rem 0;
+  margin: 0 0 4rem;
   -webkit-column-count: 3;
           column-count: 3;
 }
 
 .services li {
   margin-left: 18px;
+  padding: 0;
 }
 
 .services li:before {
