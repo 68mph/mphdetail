@@ -1050,13 +1050,14 @@ footer .address .rt {
     margin: 0 0 1rem;
     border: none;
   }
-  ul li {
-    line-height: 1.4rem;
-  }
   .card {
     width: auto;
     text-align: center;
     display: block;
+  }
+  img {
+    height: auto;
+    width: 100%;
   }
   #content {
     width: 100%;
@@ -1122,7 +1123,7 @@ footer .address .rt {
   }
   #content .navbar .dropdown-menu .dropdown-item {
     border: none;
-    padding: .6rem 0 0;
+    padding: 1rem 0 0;
     font-size: 16px;
   }
   #content .nav-links {
@@ -1262,7 +1263,10 @@ footer .address .rt {
     padding: 0 2rem;
     -webkit-column-count: 1;
             column-count: 1;
-    text-align: center;
+    margin: 3rem 0;
+  }
+  .services li {
+    font-size: 18px;
   }
   #jumbotron.email #mc_embed_signup {
     width: auto;
@@ -1309,6 +1313,9 @@ footer .address .rt {
   }
   #contact .mc-field-group ul li {
     width: 50%;
+  }
+  #contact .mc-field-group input[type=text], #contact .mc-field-group input[type=email] {
+    width: 100%;
   }
   nav {
     display: block;
