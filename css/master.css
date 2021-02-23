@@ -492,7 +492,7 @@ h2 {
   font-weight: 300;
 }
 
-h3 {
+h3, h3 a {
   font-size: 2rem;
   color: #2a2a33;
   padding: 0 0 1.2rem;
@@ -1089,7 +1089,7 @@ footer .address .rt {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin: 2rem 0 0;
+    margin: 0;
   }
   #content .container .title .step {
     display: block;
@@ -1215,16 +1215,18 @@ footer .address .rt {
     width: 100%;
     margin: 0;
   }
-  #content #hero .top .container aside {
+  #content #hero aside {
     width: 100%;
-    margin: 18px 0;
+    margin: 0 0 18px;
   }
   #content #about article p.points {
     font-size: 1rem;
   }
   #content .card-container {
-    display: block;
-    padding: 0 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 2rem 0 0;
   }
   #content .card-container .card {
@@ -1285,10 +1287,6 @@ footer .address .rt {
     -moz-appearance: none;
     appearance: none;
     opacity: 1;
-  }
-  #testimonials .card {
-    width: auto;
-    margin: 2rem 0;
   }
   #contact .container {
     width: 100%;
