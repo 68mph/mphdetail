@@ -11,6 +11,7 @@ header {
     justify-content: space-between;
     margin:0 auto 24px;
     padding:.5rem 0;
+    max-width: 1170px;
 }
 
 section {
@@ -116,10 +117,7 @@ section {
     }
     article {
     width:500px;
-    .btns {
-        padding:2rem 0 0;
-        .button {margin-right:1rem;}
-    }
+
     }
     aside {
         margin:0;
@@ -154,7 +152,7 @@ section {
         max-width: 1140px;
         margin:0 auto;
         text-align:center;
-        h3 {
+        h3, h4 {
             color:white;
 
         }

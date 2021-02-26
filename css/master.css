@@ -187,6 +187,14 @@ section {
   margin: 0 auto 4rem;
 }
 
+.btns {
+  padding: 2rem 0 0;
+}
+
+.btns .button {
+  margin-right: 1rem;
+}
+
 .button {
   background-color: #1293D4;
   padding: .6rem;
@@ -524,6 +532,7 @@ header {
           justify-content: space-between;
   margin: 0 auto 24px;
   padding: .5rem 0;
+  max-width: 1170px;
 }
 
 section article.grid-4 {
@@ -654,14 +663,6 @@ section article.grid-4 .service h4 .fa-star {
   width: 500px;
 }
 
-.container article .btns {
-  padding: 2rem 0 0;
-}
-
-.container article .btns .button {
-  margin-right: 1rem;
-}
-
 .container aside {
   margin: 0;
 }
@@ -696,7 +697,7 @@ section article.grid-4 .service h4 .fa-star {
   text-align: center;
 }
 
-#jumbotron .inner h3 {
+#jumbotron .inner h3, #jumbotron .inner h4 {
   color: white;
 }
 
