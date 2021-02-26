@@ -62,7 +62,7 @@
         display: block;
         width:100%;
         padding:0 2rem;
-        margin:2rem 0 0;
+        margin:0;
         text-align:center;
         h3 {
             display: block;
@@ -146,13 +146,6 @@
         display: block;
       }
 
-
-    aside {
-        img {
-            width:auto;
-            border-radius: 12px;
-        }
-    }
 header {
     display:block;
     max-width:100%;
@@ -194,11 +187,13 @@ header {
     }
     aside {
         width:100%;
-        padding:0 1rem;
+        padding:o;
         margin:0;
 
         img {
             width:100%;
+            margin:2rem 0;
+            border-radius:0;
         }
     }    
     #hero {
@@ -213,6 +208,9 @@ header {
     aside {
         width:100%;
         margin:0 0 18px;
+    }
+    .img-clean-1 {
+        width:100%;
     }
 }
   
@@ -364,6 +362,7 @@ header {
             width:100%;
             display:block;
             text-align: center;
+            padding:0;
             .branding {
                 padding: 1rem .6rem;;
             }

@@ -7,7 +7,6 @@ body {
 }
 
 header {
-    max-width:1140px;
     display: flex;
     justify-content: space-between;
     margin:0 auto 24px;
@@ -54,7 +53,7 @@ section {
     }
     article {
         margin:0;
-        width:50%;
+        width:auto;
         padding: 0 3rem 0 0;
     }
     h1 {
@@ -63,7 +62,7 @@ section {
     background: linear-gradient(162deg, #0281c5e8 0%, #042580 100%), url(../images/bg-hero.jpg);
     background-size: cover;
     max-width:100%;
-    .top { max-width:1140px;
+    .top { max-width:1170px;
         margin:0 auto;
         p {
             color: $color-p-hero;
@@ -73,6 +72,8 @@ section {
         border-radius:48px 0 0 0;
         box-shadow: none;
         margin:0;
+        width:547px;
+        height:auto;
     }
 }
 
@@ -116,7 +117,7 @@ section {
     article {
     width:500px;
     .btns {
-        padding:1rem 0 0;
+        padding:2rem 0 0;
         .button {margin-right:1rem;}
     }
     }

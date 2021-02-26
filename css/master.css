@@ -475,7 +475,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 2.4rem;
-  line-height: 3.2rem;
+  line-height: 3rem;
   padding: 0 0 2rem;
   font-weight: 300;
 }
@@ -516,7 +516,6 @@ body {
 }
 
 header {
-  max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,7 +571,7 @@ section article.grid-4 .service h4 .fa-star {
 
 #hero article {
   margin: 0;
-  width: 50%;
+  width: auto;
   padding: 0 3rem 0 0;
 }
 
@@ -581,7 +580,7 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 #hero .top {
-  max-width: 1140px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -594,6 +593,8 @@ section article.grid-4 .service h4 .fa-star {
   -webkit-box-shadow: none;
           box-shadow: none;
   margin: 0;
+  width: 547px;
+  height: auto;
 }
 
 .container {
@@ -654,7 +655,7 @@ section article.grid-4 .service h4 .fa-star {
 }
 
 .container article .btns {
-  padding: 1rem 0 0;
+  padding: 2rem 0 0;
 }
 
 .container article .btns .button {
@@ -1078,7 +1079,7 @@ footer .address .rt {
     display: block;
     width: 100%;
     padding: 0 2rem;
-    margin: 2rem 0 0;
+    margin: 0;
     text-align: center;
   }
   #content .title h3 {
@@ -1157,10 +1158,6 @@ footer .address .rt {
   #content .active {
     display: block;
   }
-  #content aside img {
-    width: auto;
-    border-radius: 12px;
-  }
   #content header {
     display: block;
     max-width: 100%;
@@ -1202,11 +1199,13 @@ footer .address .rt {
   }
   #content aside {
     width: 100%;
-    padding: 0 1rem;
+    padding: o;
     margin: 0;
   }
   #content aside img {
     width: 100%;
+    margin: 2rem 0;
+    border-radius: 0;
   }
   #content #hero {
     margin: 0;
@@ -1218,6 +1217,9 @@ footer .address .rt {
   #content #hero aside {
     width: 100%;
     margin: 0 0 18px;
+  }
+  #content #hero .img-clean-1 {
+    width: 100%;
   }
   #content #about article p.points {
     font-size: 1rem;
@@ -1345,6 +1347,7 @@ footer .address .rt {
     width: 100%;
     display: block;
     text-align: center;
+    padding: 0;
   }
   footer .inner .rt {
     display: block;
