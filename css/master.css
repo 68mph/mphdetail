@@ -659,10 +659,6 @@ section article.grid-4 .service h4 .fa-star {
   padding: 0;
 }
 
-.container article {
-  width: 500px;
-}
-
 .container aside {
   margin: 0;
 }
@@ -1031,6 +1027,36 @@ footer .address .rt {
   display: flex;
 }
 
+@media screen and (max-width: 1200px) {
+  section {
+    padding: 0 2rem;
+  }
+  #hero article .button {
+    display: block;
+    margin: 0 0 2rem;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  #content #hero {
+    margin: 0;
+  }
+  #content #hero .container {
+    width: 100%;
+  }
+  #content #hero .container article {
+    width: 100%;
+    margin: 0;
+  }
+  #content #hero aside {
+    width: 100%;
+    margin: 0 0 18px;
+  }
+  #content #hero .img-clean-1 {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   h1 {
     font-size: 2rem;
@@ -1200,27 +1226,13 @@ footer .address .rt {
   }
   #content aside {
     width: 100%;
-    padding: o;
+    padding: 0;
     margin: 0;
   }
   #content aside img {
     width: 100%;
     margin: 2rem 0;
     border-radius: 0;
-  }
-  #content #hero {
-    margin: 0;
-  }
-  #content #hero .top .container article {
-    width: 100%;
-    margin: 0;
-  }
-  #content #hero aside {
-    width: 100%;
-    margin: 0 0 18px;
-  }
-  #content #hero .img-clean-1 {
-    width: 100%;
   }
   #content #about article p.points {
     font-size: 1rem;
