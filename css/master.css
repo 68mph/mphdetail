@@ -672,7 +672,7 @@ section article.grid-4 .service h4 .fa-star {
   height: auto;
   -webkit-box-shadow: 0 0 74px #e0e0e0;
           box-shadow: 0 0 74px #e0e0e0;
-  margin: 0;
+  margin: 0 0 2rem;
 }
 
 #head {
@@ -938,7 +938,7 @@ footer {
 }
 
 footer .inner {
-  max-width: 1140px;
+  max-width: 1170px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
