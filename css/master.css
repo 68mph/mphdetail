@@ -1054,6 +1054,7 @@ footer .address .rt {
   }
   #content #hero .img-clean-1 {
     width: 100%;
+    border-radius: 0;
   }
 }
 
@@ -1189,6 +1190,7 @@ footer .address .rt {
     display: block;
     max-width: 100%;
     padding: 0 2rem;
+    margin: 0;
   }
   #content header .links {
     display: none;
