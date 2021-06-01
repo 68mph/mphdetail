@@ -15,7 +15,10 @@ small {
 }
 strong {
     color: $color-title;
-    font-size: 1rem;
+    font-size: 16px;
+    line-height: 1.8rem;
+    padding:24px 0 0;
+    display: block;
 }
 
 p {
